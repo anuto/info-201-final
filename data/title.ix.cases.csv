@@ -1,0 +1,396 @@
+"closed","state_fips","state_abbrev","status","state_name","case_id","college","college_unitid","opened","sector","is.closed"
+NA,12,"FL","active","Florida",416,"University of Central Florida",132903,"2017-05-05","public",FALSE
+NA,12,"FL","active","Florida",415,"University of Central Florida",132903,"2017-05-04","public",FALSE
+NA,36,"NY","active","New York",414,"City University of New York Hunter College",190594,"2017-05-04","public",FALSE
+NA,36,"NY","active","New York",413,"New York University",193900,"2017-04-28","private",FALSE
+NA,22,"LA","active","Louisiana",412,"Southern University",160621,"2017-04-25","public",FALSE
+NA,16,"ID","active","Idaho",411,"College of Idaho",142294,"2017-04-20","private",FALSE
+NA,39,"OH","active","Ohio",406,"Denison University",202523,"2017-04-18","private",FALSE
+NA,25,"MA","active","Massachusetts",405,"Harvard University",166027,"2017-04-17","private",FALSE
+NA,42,"PA","active","Pennsylvania",410,"Dickinson College",212009,"2017-04-17","private",FALSE
+NA,41,"OR","active","Oregon",409,"Oregon State University",209542,"2017-04-17","public",FALSE
+NA,9,"CT","active","Connecticut",403,"Yale University",130794,"2017-04-17","private",FALSE
+NA,25,"MA","active","Massachusetts",408,"Worcester State University",168430,"2017-04-14","public",FALSE
+NA,25,"MA","active","Massachusetts",404,"Amherst College",164465,"2017-04-14","private",FALSE
+NA,25,"MA","active","Massachusetts",407,"Lesley University",166452,"2017-04-13","private",FALSE
+NA,24,"MD","active","Maryland",400,"University of Maryland at College Park",163286,"2017-03-31","public",FALSE
+NA,11,"DC","active","District of Columbia",396,"American University",131159,"2017-03-28","private",FALSE
+NA,20,"KS","active","Kansas",398,"Kansas State University",155399,"2017-03-27","public",FALSE
+NA,51,"VA","active","Virginia",399,"Virginia Commonwealth University",234030,"2017-03-27","public",FALSE
+NA,17,"IL","active","Illinois",397,"University of Illinois at Chicago",145600,"2017-03-24","public",FALSE
+NA,40,"OK","active","Oklahoma",402,"Saint Gregory's University at Shawnee (Okla.)",207689,"2017-03-23","private",FALSE
+NA,53,"WA","active","Washington",395,"Washington State University",236939,"2017-03-20","public",FALSE
+NA,48,"TX","active","Texas",393,"Southwestern University (Tex.)",228343,"2017-03-13","private",FALSE
+NA,17,"IL","active","Illinois",392,"University of Illinois at Urbana-Champaign",145637,"2017-03-13","public",FALSE
+NA,42,"PA","active","Pennsylvania",394,"Manor College",213774,"2017-03-13","private",FALSE
+NA,45,"SC","active","South Carolina",391,"Wofford College",218973,"2017-03-07","private",FALSE
+NA,33,"NH","active","New Hampshire",390,"Dartmouth College",182670,"2017-02-22","private",FALSE
+NA,39,"OH","active","Ohio",388,"University of Cincinnati",201885,"2017-02-17","public",FALSE
+NA,21,"KY","active","Kentucky",389,"Eastern Kentucky University",156620,"2017-02-16","public",FALSE
+NA,37,"NC","active","North Carolina",387,"Methodist University",198969,"2017-02-01","private",FALSE
+NA,54,"WV","active","West Virginia",386,"Marshall University",237525,"2017-01-27","public",FALSE
+NA,36,"NY","active","New York",385,"Cornell University",190415,"2017-01-25","private",FALSE
+NA,12,"FL","active","Florida",383,"University of Florida",134130,"2017-01-20","public",FALSE
+NA,47,"TN","active","Tennessee",381,"Vanderbilt University",221999,"2017-01-13","private",FALSE
+NA,24,"MD","active","Maryland",382,"University of Maryland at College Park",163286,"2017-01-11","public",FALSE
+NA,39,"OH","active","Ohio",380,"Oberlin College",204501,"2017-01-09","private",FALSE
+NA,36,"NY","active","New York",379,"State University of New York College at Plattsburgh",196246,"2017-01-04","public",FALSE
+NA,39,"OH","active","Ohio",377,"Ohio State University",204796,"2017-01-03","public",FALSE
+NA,4,"AZ","active","Arizona",376,"Arizona State University",104151,"2016-12-29","public",FALSE
+NA,6,"CA","active","California",378,"Harvey Mudd College",115409,"2016-12-28","private",FALSE
+NA,18,"IN","active","Indiana",375,"University of Notre Dame",152080,"2016-12-23","private",FALSE
+NA,37,"NC","active","North Carolina",374,"Duke University",198419,"2016-12-21","private",FALSE
+NA,18,"IN","active","Indiana",370,"Purdue University at West Lafayette",243780,"2016-12-12","public",FALSE
+NA,24,"MD","active","Maryland",371,"University of Maryland-Baltimore County",163268,"2016-12-07","public",FALSE
+NA,36,"NY","active","New York",367,"Ithaca College",191968,"2016-12-02","private",FALSE
+NA,6,"CA","active","California",368,"Westmont College",125727,"2016-12-01","private",FALSE
+NA,53,"WA","active","Washington",373,"Eastern Washington University",235097,"2016-12-01","public",FALSE
+NA,51,"VA","active","Virginia",384,"University of Mary Washington",232681,"2016-11-30","public",FALSE
+NA,55,"WI","active","Wisconsin",366,"Medical College of Wisconsin",239169,"2016-11-29","private",FALSE
+NA,12,"FL","active","Florida",372,"Stetson University",137546,"2016-11-29","private",FALSE
+NA,51,"VA","active","Virginia",369,"Liberty University",232557,"2016-11-28","private",FALSE
+NA,6,"CA","active","California",362,"California Institute of the Arts",111081,"2016-11-14","private",FALSE
+NA,39,"OH","active","Ohio",361,"Miami University (Ohio)",204024,"2016-11-03","public",FALSE
+NA,19,"IA","active","Iowa",360,"Iowa State University",153603,"2016-11-03","public",FALSE
+NA,18,"IN","active","Indiana",363,"Indiana University at Bloomington",151351,"2016-10-31","public",FALSE
+NA,38,"ND","active","North Dakota",364,"Williston State College",200341,"2016-10-31","public",FALSE
+NA,6,"CA","active","California",359,"California State University at San Marcos",366711,"2016-10-27","public",FALSE
+NA,24,"MD","active","Maryland",357,"Morgan State University",163453,"2016-10-25","public",FALSE
+NA,6,"CA","active","California",358,"Loyola Marymount University",117946,"2016-10-25","private",FALSE
+NA,48,"TX","active","Texas",356,"Baylor University",223232,"2016-10-18","private",FALSE
+NA,36,"NY","active","New York",355,"Columbia University",190150,"2016-10-18","private",FALSE
+NA,4,"AZ","active","Arizona",351,"Arizona State University",104151,"2016-09-29","public",FALSE
+NA,39,"OH","active","Ohio",352,"College of Wooster (Ohio)",206589,"2016-09-29","private",FALSE
+NA,36,"NY","active","New York",353,"Cornell University",190415,"2016-09-28","private",FALSE
+NA,51,"VA","active","Virginia",349,"University of Richmond",233374,"2016-09-16","private",FALSE
+"2016-10-26",6,"CA","resolved","California",348,"University of California at Los Angeles",110662,"2016-09-13","public",TRUE
+NA,25,"MA","active","Massachusetts",354,"Regis College",167598,"2016-09-12","private",FALSE
+NA,51,"VA","active","Virginia",347,"George Mason University",232186,"2016-09-12","public",FALSE
+NA,39,"OH","active","Ohio",346,"Kenyon College",203535,"2016-09-07","private",FALSE
+NA,48,"TX","active","Texas",342,"University of North Texas",227216,"2016-09-06","public",FALSE
+NA,39,"OH","active","Ohio",343,"College of Wooster (Ohio)",206589,"2016-09-02","private",FALSE
+NA,18,"IN","active","Indiana",344,"Indiana University at Bloomington",151351,"2016-09-01","public",FALSE
+NA,27,"MN","active","Minnesota",341,"College of Saint Scholastica",174899,"2016-08-26","private",FALSE
+NA,17,"IL","active","Illinois",340,"University of Illinois at Urbana-Champaign",145637,"2016-08-24","public",FALSE
+NA,36,"NY","active","New York",339,"Rockefeller University",195049,"2016-08-17","private",FALSE
+NA,36,"NY","active","New York",337,"Cornell University",190415,"2016-08-16","private",FALSE
+NA,37,"NC","active","North Carolina",335,"Duke University",198419,"2016-08-11","private",FALSE
+NA,34,"NJ","active","New Jersey",336,"Princeton University",186131,"2016-08-11","private",FALSE
+NA,18,"IN","active","Indiana",331,"Hanover College",150756,"2016-08-05","private",FALSE
+NA,6,"CA","active","California",333,"La Sierra University",117627,"2016-08-05","private",FALSE
+NA,18,"IN","active","Indiana",334,"Purdue University at West Lafayette",243780,"2016-08-05","public",FALSE
+NA,49,"UT","active","Utah",332,"Brigham Young University",230038,"2016-08-04","private",FALSE
+NA,51,"VA","active","Virginia",329,"University of Virginia",234076,"2016-07-22","public",FALSE
+NA,56,"WY","active","Wyoming",345,"Northwest College (Wyo.)",240657,"2016-07-22","public",FALSE
+"2016-08-09",45,"SC","resolved","South Carolina",330,"Clemson University",217882,"2016-07-21","public",TRUE
+NA,42,"PA","active","Pennsylvania",328,"Gannon University",212601,"2016-07-20","private",FALSE
+NA,24,"MD","active","Maryland",327,"University of Maryland-Baltimore County",163268,"2016-07-19","public",FALSE
+NA,54,"WV","active","West Virginia",326,"James Rumsey Technical Institute",237473,"2016-07-19","public",FALSE
+NA,28,"MS","active","Mississippi",322,"University of Southern Mississippi",176372,"2016-07-05","public",FALSE
+NA,25,"MA","active","Massachusetts",320,"Northeastern University",167358,"2016-07-05","private",FALSE
+NA,49,"UT","active","Utah",316,"University of Utah",230764,"2016-06-23","public",FALSE
+NA,36,"NY","active","New York",319,"Columbia University",190150,"2016-06-23","private",FALSE
+NA,36,"NY","active","New York",321,"Syracuse University",196413,"2016-06-22","private",FALSE
+NA,6,"CA","active","California",315,"University of California at Santa Cruz",110714,"2016-06-22","public",FALSE
+NA,36,"NY","active","New York",318,"State University of New York College at Potsdam",196200,"2016-06-22","public",FALSE
+NA,11,"DC","active","District of Columbia",317,"American University",131159,"2016-06-21","private",FALSE
+NA,36,"NY","active","New York",305,"Cornell University",190415,"2016-06-16","private",FALSE
+NA,18,"IN","active","Indiana",338,"Indiana University-Purdue University at Fort Wayne",151102,"2016-06-10","public",FALSE
+NA,6,"CA","active","California",303,"Loyola Marymount University",117946,"2016-06-08","private",FALSE
+NA,39,"OH","active","Ohio",304,"John Carroll University",203368,"2016-06-06","private",FALSE
+NA,47,"TN","active","Tennessee",299,"Rhodes College",221351,"2016-06-01","private",FALSE
+NA,42,"PA","active","Pennsylvania",298,"Gannon University",212601,"2016-06-01","private",FALSE
+NA,27,"MN","active","Minnesota",292,"St. Olaf College",174844,"2016-05-24","private",FALSE
+NA,1,"AL","active","Alabama",297,"University of Alabama at Birmingham",100663,"2016-05-23","public",FALSE
+NA,55,"WI","active","Wisconsin",325,"University of Wisconsin at Madison",240444,"2016-05-20","public",FALSE
+NA,53,"WA","active","Washington",295,"Edmonds Community College",235103,"2016-05-19","public",FALSE
+NA,6,"CA","active","California",294,"Saint Mary's College of California",123554,"2016-05-19","private",FALSE
+NA,30,"MT","active","Montana",296,"Dawson Community College",180151,"2016-05-19","public",FALSE
+NA,24,"MD","active","Maryland",293,"Mount St. Mary's University (Md.)",163462,"2016-05-18","private",FALSE
+NA,31,"NE","active","Nebraska",300,"Chadron State College",180948,"2016-05-17","public",FALSE
+NA,18,"IN","active","Indiana",291,"Indiana University at Bloomington",151351,"2016-05-17","public",FALSE
+NA,36,"NY","active","New York",290,"University at Buffalo",196088,"2016-05-12","public",FALSE
+NA,53,"WA","active","Washington",286,"Whitworth University",237066,"2016-05-10","private",FALSE
+NA,53,"WA","active","Washington",289,"Washington State University",236939,"2016-05-10","public",FALSE
+NA,25,"MA","active","Massachusetts",285,"Babson College",164580,"2016-04-28","private",FALSE
+NA,36,"NY","active","New York",284,"Monroe Community College",193326,"2016-04-27","public",FALSE
+NA,17,"IL","active","Illinois",283,"University of Illinois at Chicago",145600,"2016-04-22","public",FALSE
+NA,5,"AR","active","Arkansas",281,"University of Arkansas at Fayetteville",106397,"2016-04-21","public",FALSE
+NA,5,"AR","active","Arkansas",282,"University of Arkansas at Fayetteville",106397,"2016-04-21","public",FALSE
+NA,34,"NJ","active","New Jersey",280,"Monmouth University",185572,"2016-04-21","private",FALSE
+NA,25,"MA","active","Massachusetts",277,"Clark University",165334,"2016-04-18","private",FALSE
+NA,6,"CA","active","California",287,"Stanford University",243744,"2016-04-18","private",FALSE
+NA,18,"IN","active","Indiana",279,"Grace College and Seminary",150677,"2016-04-18","private",FALSE
+NA,40,"OK","active","Oklahoma",276,"University of Tulsa",207971,"2016-04-14","private",FALSE
+NA,17,"IL","active","Illinois",288,"Knox College",146427,"2016-04-06","private",FALSE
+NA,34,"NJ","active","New Jersey",275,"Rider University",186283,"2016-04-04","private",FALSE
+NA,48,"TX","active","Texas",274,"Paul Quinn College",227429,"2016-03-23","private",FALSE
+NA,12,"FL","active","Florida",271,"University of Miami",135726,"2016-03-11","private",FALSE
+NA,16,"ID","active","Idaho",273,"Lewis-Clark State College",142328,"2016-03-10","public",FALSE
+NA,16,"ID","active","Idaho",269,"College of Idaho",142294,"2016-03-08","private",FALSE
+NA,6,"CA","active","California",272,"University of Southern California",123961,"2016-03-08","private",FALSE
+NA,25,"MA","active","Massachusetts",270,"Stonehill College",167996,"2016-03-03","private",FALSE
+NA,25,"MA","active","Massachusetts",267,"Harvard University",166027,"2016-03-03","private",FALSE
+NA,8,"CO","active","Colorado",266,"Colorado State University at Fort Collins",126818,"2016-03-02","public",FALSE
+NA,25,"MA","active","Massachusetts",264,"Brandeis University",165015,"2016-03-01","private",FALSE
+NA,25,"MA","active","Massachusetts",265,"Brandeis University",165015,"2016-03-01","private",FALSE
+NA,48,"TX","active","Texas",263,"University of Texas Health Science Center at San Antonio",228644,"2016-02-24","public",FALSE
+NA,18,"IN","active","Indiana",260,"Vincennes University",152637,"2016-02-19","public",FALSE
+NA,18,"IN","active","Indiana",259,"University of Notre Dame",152080,"2016-02-19","private",FALSE
+NA,48,"TX","active","Texas",261,"Southwestern University (Tex.)",228343,"2016-02-18","private",FALSE
+NA,10,"DE","active","Delaware",262,"Delaware State University",130934,"2016-02-12","public",FALSE
+NA,47,"TN","active","Tennessee",258,"Southwest Tennessee Community College",221485,"2016-02-12","public",FALSE
+NA,39,"OH","active","Ohio",257,"University of Cincinnati",201885,"2016-02-09","public",FALSE
+NA,22,"LA","active","Louisiana",256,"Loyola University New Orleans",159656,"2016-02-05","private",FALSE
+NA,56,"WY","active","Wyoming",268,"Laramie County Community College",240620,"2016-02-04","public",FALSE
+NA,17,"IL","active","Illinois",254,"University of Chicago",144050,"2016-02-03","private",FALSE
+NA,17,"IL","active","Illinois",255,"University of Chicago",144050,"2016-02-03","private",FALSE
+NA,36,"NY","active","New York",253,"Skidmore College",195526,"2016-01-28","private",FALSE
+NA,6,"CA","active","California",252,"University of California at San Francisco",110699,"2016-01-12","public",FALSE
+NA,36,"NY","active","New York",249,"Bard College",189088,"2015-12-30","private",FALSE
+NA,17,"IL","active","Illinois",195,"Columbia College Chicago",144281,"2015-12-15","private",FALSE
+NA,17,"IL","active","Illinois",251,"Southern Illinois University at Carbondale",149222,"2015-12-14","public",FALSE
+NA,6,"CA","active","California",193,"California Polytechnic State University at San Luis Obispo",110422,"2015-12-09","public",FALSE
+NA,51,"VA","active","Virginia",244,"Virginia Commonwealth University",234030,"2015-12-08","public",FALSE
+NA,25,"MA","active","Massachusetts",192,"Boston College",164924,"2015-12-04","private",FALSE
+NA,25,"MA","active","Massachusetts",242,"Western New England University",168254,"2015-12-03","private",FALSE
+NA,42,"PA","active","Pennsylvania",199,"Lincoln University (Pa.)",213598,"2015-12-02","public",FALSE
+NA,36,"NY","active","New York",196,"Cornell University",190415,"2015-12-02","private",FALSE
+NA,20,"KS","active","Kansas",206,"Kansas State University",155399,"2015-11-24","public",FALSE
+NA,39,"OH","active","Ohio",214,"Oberlin College",204501,"2015-11-24","private",FALSE
+NA,6,"CA","active","California",201,"Santa Clara University",122931,"2015-11-24","private",FALSE
+NA,37,"NC","active","North Carolina",123,"Duke University",198419,"2015-11-20","private",FALSE
+NA,42,"PA","active","Pennsylvania",220,"Temple University",216339,"2015-11-20","public",FALSE
+NA,31,"NE","active","Nebraska",194,"Central Community College",180902,"2015-11-20","public",FALSE
+NA,13,"GA","active","Georgia",223,"Spelman College",141060,"2015-11-19","private",FALSE
+NA,13,"GA","active","Georgia",224,"Morehouse College",140553,"2015-11-19","private",FALSE
+NA,55,"WI","active","Wisconsin",230,"University of Wisconsin at Madison",240444,"2015-11-18","public",FALSE
+NA,53,"WA","active","Washington",245,"Western Washington University",237011,"2015-11-05","public",FALSE
+NA,27,"MN","active","Minnesota",215,"St. Cloud State University",174783,"2015-11-05","public",FALSE
+NA,48,"TX","active","Texas",216,"University of Houston",225511,"2015-10-27","public",FALSE
+NA,17,"IL","active","Illinois",248,"Judson University (Ill.)",146339,"2015-10-20","private",FALSE
+NA,26,"MI","active","Michigan",168,"Alma College",168591,"2015-10-20","private",FALSE
+NA,12,"FL","active","Florida",208,"University of Miami",135726,"2015-10-09","private",FALSE
+NA,6,"CA","active","California",166,"Pomona College",121345,"2015-10-02","private",FALSE
+NA,36,"NY","active","New York",128,"St. John's University (N.Y.)",195809,"2015-10-01","private",FALSE
+NA,34,"NJ","active","New Jersey",233,"Princeton University",186131,"2015-09-30","private",FALSE
+NA,25,"MA","active","Massachusetts",204,"University of Massachusetts at Amherst",166629,"2015-09-24","public",FALSE
+NA,20,"KS","active","Kansas",205,"Kansas State University",155399,"2015-09-24","public",FALSE
+NA,53,"WA","active","Washington",246,"Washington State University",236939,"2015-09-23","public",FALSE
+NA,36,"NY","active","New York",218,"Union College (N.Y.)",196866,"2015-09-16","private",FALSE
+NA,72,"PR","active","Puerto Rico",219,"University of Puerto Rico-Central Administration",243160,"2015-09-14","public",FALSE
+NA,17,"IL","active","Illinois",210,"Monmouth College",147341,"2015-09-11","private",FALSE
+NA,55,"WI","active","Wisconsin",222,"University of Wisconsin at Whitewater",240189,"2015-09-10","public",FALSE
+NA,29,"MO","active","Missouri",240,"William Jewell College",179955,"2015-09-09","private",FALSE
+NA,17,"IL","active","Illinois",203,"Southern Illinois University at Carbondale",149222,"2015-09-04","public",FALSE
+NA,36,"NY","active","New York",183,"Corning Community College",190442,"2015-09-02","public",FALSE
+NA,55,"WI","active","Wisconsin",163,"Medical College of Wisconsin",239169,"2015-09-01","private",FALSE
+"2016-09-21",25,"MA","resolved","Massachusetts",350,"Wheaton College (Mass.)",168281,"2015-08-31","private",TRUE
+NA,39,"OH","active","Ohio",180,"Cleveland State University",202134,"2015-08-31","public",FALSE
+NA,36,"NY","active","New York",189,"Pratt Institute",194578,"2015-08-26","private",FALSE
+NA,33,"NH","active","New Hampshire",185,"Dartmouth College",182670,"2015-08-21","private",FALSE
+NA,31,"NE","active","Nebraska",211,"University of Nebraska at Kearney",181215,"2015-08-20","public",FALSE
+NA,25,"MA","active","Massachusetts",207,"Massachusetts Institute of Technology",166683,"2015-08-13","private",FALSE
+NA,25,"MA","active","Massachusetts",187,"Tufts University",168148,"2015-08-13","private",FALSE
+NA,55,"WI","active","Wisconsin",229,"University of Wisconsin at Madison",240444,"2015-08-12","public",FALSE
+NA,39,"OH","active","Ohio",178,"Ohio State University",204796,"2015-08-12","public",FALSE
+NA,36,"NY","active","New York",160,"Hobart and William Smith Colleges",191630,"2015-08-10","private",FALSE
+NA,6,"CA","active","California",239,"University of San Diego",122436,"2015-08-06","private",FALSE
+NA,22,"LA","active","Louisiana",200,"Louisiana State University system",159638,"2015-08-04","public",FALSE
+NA,48,"TX","active","Texas",190,"Trinity University",229267,"2015-07-31","private",FALSE
+NA,42,"PA","active","Pennsylvania",167,"Allegheny College",210669,"2015-07-30","private",FALSE
+NA,36,"NY","active","New York",182,"Columbia University",190150,"2015-07-30","private",FALSE
+"2016-10-12",10,"DE","resolved","Delaware",241,"Wesley College (Del.)",131098,"2015-07-28","private",TRUE
+"2016-03-08",6,"CA","resolved","California",164,"Chapman University",111948,"2015-07-25","private",TRUE
+NA,6,"CA","active","California",175,"Stanford University",243744,"2015-07-23","private",FALSE
+"2017-03-24",6,"CA","resolved","California",174,"Stanford University",243744,"2015-07-23","private",TRUE
+NA,19,"IA","active","Iowa",198,"Grinnell College",153384,"2015-07-22","private",FALSE
+NA,34,"NJ","active","New Jersey",202,"Seton Hall University",186584,"2015-07-22","private",FALSE
+NA,47,"TN","active","Tennessee",39,"University of Tennessee at Knoxville",221759,"2015-07-21","public",FALSE
+NA,20,"KS","active","Kansas",226,"University of Kansas",155317,"2015-07-20","public",FALSE
+NA,12,"FL","active","Florida",51,"Full Sail University",134237,"2015-07-20","private",FALSE
+NA,36,"NY","active","New York",127,"New York University",193900,"2015-07-16","private",FALSE
+NA,6,"CA","active","California",225,"University of California at Berkeley",110635,"2015-07-15","public",FALSE
+NA,51,"VA","active","Virginia",243,"Virginia Commonwealth University",234030,"2015-07-14","public",FALSE
+NA,18,"IN","active","Indiana",55,"Indiana University at Bloomington",151351,"2015-06-30","public",FALSE
+NA,47,"TN","active","Tennessee",91,"University of Tennessee at Knoxville",221759,"2015-06-29","public",FALSE
+NA,13,"GA","active","Georgia",119,"Oglethorpe University",140696,"2015-06-23","private",FALSE
+NA,36,"NY","active","New York",133,"University at Albany, SUNY",196060,"2015-06-16","public",FALSE
+NA,16,"ID","active","Idaho",43,"Idaho State University",142276,"2015-06-05","public",FALSE
+NA,53,"WA","active","Washington",140,"University of Washington",236948,"2015-06-01","public",FALSE
+"2016-09-30",6,"CA","resolved","California",114,"Stanford University",243744,"2015-05-28","private",TRUE
+NA,36,"NY","active","New York",129,"St. John's University (N.Y.)",195809,"2015-05-27","private",FALSE
+NA,16,"ID","active","Idaho",80,"University of Idaho",142285,"2015-05-27","public",FALSE
+NA,36,"NY","active","New York",66,"Cornell University",190415,"2015-05-26","private",FALSE
+NA,36,"NY","active","New York",122,"New York University",193900,"2015-05-22","private",FALSE
+NA,36,"NY","active","New York",18,"University of Rochester",195030,"2015-05-21","private",FALSE
+NA,6,"CA","active","California",27,"University of California at San Francisco",110699,"2015-05-06","public",FALSE
+NA,42,"PA","active","Pennsylvania",143,"Valley Forge Military College",216551,"2015-04-23","private",FALSE
+NA,20,"KS","active","Kansas",57,"Kansas State University",155399,"2015-04-20","public",FALSE
+NA,19,"IA","active","Iowa",81,"University of Iowa",153658,"2015-04-20","public",FALSE
+NA,53,"WA","active","Washington",152,"Western Washington University",237011,"2015-04-17","public",FALSE
+NA,1,"AL","active","Alabama",161,"Marion Military Institute",101648,"2015-04-16","public",FALSE
+NA,21,"KY","active","Kentucky",83,"University of Kentucky",157085,"2015-04-14","public",FALSE
+NA,44,"RI","active","Rhode Island",172,"Brown University",217156,"2015-04-10","private",FALSE
+NA,36,"NY","active","New York",146,"Buffalo State College",196130,"2015-04-07","public",FALSE
+NA,47,"TN","active","Tennessee",85,"University of Tennessee at Chattanooga",221740,"2015-04-03","public",FALSE
+NA,36,"NY","active","New York",98,"Buffalo State College",196130,"2015-03-26","public",FALSE
+NA,6,"CA","active","California",22,"University of California at Davis",110644,"2015-03-24","public",FALSE
+NA,48,"TX","active","Texas",135,"Texas A&M University at College Station",228723,"2015-03-18","public",FALSE
+NA,6,"CA","active","California",29,"University of California at Santa Cruz",110714,"2015-03-13","public",FALSE
+NA,11,"DC","active","District of Columbia",5,"American University",131159,"2015-03-11","private",FALSE
+NA,6,"CA","active","California",109,"San Francisco State University",122597,"2015-03-10","public",FALSE
+NA,8,"CO","active","Colorado",77,"University of Denver",127060,"2015-03-10","private",FALSE
+NA,24,"MD","active","Maryland",237,"St. Mary's College of Maryland",163912,"2015-03-10","public",FALSE
+NA,42,"PA","active","Pennsylvania",126,"Point Park University",215442,"2015-02-27","private",FALSE
+NA,42,"PA","active","Pennsylvania",186,"Point Park University",215442,"2015-02-27","private",FALSE
+NA,6,"CA","active","California",7,"Stanford University",243744,"2015-02-26","private",FALSE
+NA,55,"WI","active","Wisconsin",141,"University of Wisconsin at Madison",240444,"2015-02-24","public",FALSE
+NA,51,"VA","active","Virginia",149,"Washington and Lee University",234207,"2015-02-18","private",FALSE
+NA,9,"CT","active","Connecticut",74,"University of Connecticut",129020,"2015-02-17","public",FALSE
+NA,36,"NY","active","New York",97,"State University of New York, The College at Brockport",196121,"2015-02-12","public",FALSE
+NA,24,"MD","active","Maryland",236,"St. Mary's College of Maryland",163912,"2015-02-06","public",FALSE
+NA,24,"MD","active","Maryland",235,"St. Mary's College of Maryland",163912,"2015-02-06","public",FALSE
+NA,24,"MD","active","Maryland",234,"St. Mary's College of Maryland",163912,"2015-02-06","public",FALSE
+NA,49,"UT","active","Utah",153,"Westminster College (Utah)",230807,"2015-01-20","private",FALSE
+NA,36,"NY","active","New York",65,"Columbia University",190150,"2015-01-08","private",FALSE
+NA,36,"NY","active","New York",145,"State University of New York College at Purchase",196219,"2015-01-05","public",FALSE
+NA,36,"NY","active","New York",10,"Barnard College",189097,"2014-12-29","private",FALSE
+"2015-03-23",6,"CA","resolved","California",139,"University of San Diego",122436,"2014-12-22","private",TRUE
+NA,36,"NY","active","New York",21,"Canisius College",189705,"2014-12-11","private",FALSE
+"2016-04-22",35,"NM","resolved","New Mexico",278,"University of New Mexico",187985,"2014-12-05","public",TRUE
+NA,42,"PA","active","Pennsylvania",2,"Allegheny College",210669,"2014-12-05","private",FALSE
+NA,47,"TN","active","Tennessee",38,"University of Tennessee at Chattanooga",221740,"2014-12-05","public",FALSE
+NA,40,"OK","active","Oklahoma",44,"Langston University",207209,"2014-11-26","public",FALSE
+NA,42,"PA","active","Pennsylvania",69,"Elizabethtown College",212197,"2014-11-20","private",FALSE
+NA,42,"PA","active","Pennsylvania",100,"Temple University",216339,"2014-11-19","public",FALSE
+NA,36,"NY","active","New York",45,"Hamilton College (N.Y.)",191515,"2014-11-14","private",FALSE
+NA,6,"CA","active","California",110,"San Jose/Evergreen Community College District",122737,"2014-11-12","public",FALSE
+NA,53,"WA","active","Washington",154,"Whitman College",237057,"2014-11-07","private",FALSE
+NA,25,"MA","active","Massachusetts",13,"Northeastern University",167358,"2014-10-30","private",FALSE
+NA,19,"IA","active","Iowa",52,"Iowa State University",153603,"2014-10-15","public",FALSE
+NA,50,"VT","active","Vermont",40,"Marlboro College",230940,"2014-10-06","private",FALSE
+NA,26,"MI","active","Michigan",53,"Grand Valley State University",170082,"2014-10-06","public",FALSE
+NA,18,"IN","active","Indiana",144,"Valparaiso University",152600,"2014-10-03","private",FALSE
+NA,19,"IA","active","Iowa",191,"Drake University",153269,"2014-10-03","private",FALSE
+NA,31,"NE","active","Nebraska",89,"University of Nebraska at Lincoln",181464,"2014-09-30","public",FALSE
+NA,6,"CA","active","California",19,"California Institute of the Arts",111081,"2014-09-30","private",FALSE
+NA,17,"IL","active","Illinois",365,"Knox College",146427,"2014-09-16","private",FALSE
+"2015-04-06",51,"VA","resolved","Virginia",147,"Virginia Military Institute",234085,"2014-09-15","public",TRUE
+NA,54,"WV","active","West Virginia",67,"Davis & Elkins College",237358,"2014-09-05","private",FALSE
+NA,12,"FL","active","Florida",35,"University of South Florida",137351,"2014-09-03","public",FALSE
+"2015-04-22",25,"MA","resolved","Massachusetts",105,"Brandeis University",165015,"2014-08-29","private",TRUE
+NA,24,"MD","active","Maryland",33,"Johns Hopkins University",162928,"2014-08-08","private",FALSE
+NA,6,"CA","active","California",23,"University of California at Los Angeles",110662,"2014-08-08","public",FALSE
+NA,20,"KS","active","Kansas",56,"Kansas State University",155399,"2014-08-04","public",FALSE
+NA,36,"NY","active","New York",131,"State University of New York at Stony Brook",196097,"2014-07-23","public",FALSE
+NA,36,"NY","active","New York",20,"Pace University",194310,"2014-07-22","private",FALSE
+NA,25,"MA","active","Massachusetts",46,"Hampshire College",166018,"2014-07-17","private",FALSE
+NA,20,"KS","active","Kansas",82,"University of Kansas",155317,"2014-07-16","public",FALSE
+NA,25,"MA","active","Massachusetts",87,"University of Massachusetts at Dartmouth",167987,"2014-07-16","public",FALSE
+NA,44,"RI","active","Rhode Island",15,"Brown University",217156,"2014-07-10","private",FALSE
+NA,36,"NY","active","New York",104,"St. Thomas Aquinas College",195243,"2014-07-09","private",FALSE
+NA,20,"KS","active","Kansas",148,"Washburn University",156082,"2014-07-01","public",FALSE
+NA,24,"MD","active","Maryland",14,"Morgan State University",163453,"2014-06-26","public",FALSE
+NA,17,"IL","active","Illinois",59,"Knox College",146427,"2014-06-26","private",FALSE
+NA,8,"CO","active","Colorado",64,"Colorado State University at Fort Collins",126818,"2014-06-24","public",FALSE
+NA,51,"VA","active","Virginia",16,"University of Richmond",233374,"2014-06-12","private",FALSE
+NA,25,"MA","active","Massachusetts",11,"Berklee College of Music",164748,"2014-06-09","private",FALSE
+NA,51,"VA","active","Virginia",49,"James Madison University",232423,"2014-06-04","public",FALSE
+NA,29,"MO","active","Missouri",42,"Missouri University of Science and Technology",178411,"2014-05-21","public",FALSE
+"2016-12-20",36,"NY","resolved","New York",197,"Elmira College",190983,"2014-05-12","private",TRUE
+NA,10,"DE","active","Delaware",75,"University of Delaware",130943,"2014-05-08","public",FALSE
+NA,48,"TX","active","Texas",179,"Cisco College",223898,"2014-05-07","public",FALSE
+NA,39,"OH","active","Ohio",3,"University of Akron",200800,"2014-05-06","public",FALSE
+NA,2,"AK","resolved","Alaska",4,"University of Alaska system",103529,"2014-05-05","public",FALSE
+NA,8,"CO","active","Colorado",36,"University of Colorado at Denver",126562,"2014-04-29","public",FALSE
+NA,54,"WV","active","West Virginia",12,"Bethany College (W.Va.)",237181,"2014-04-28","private",FALSE
+NA,36,"NY","active","New York",41,"Hobart and William Smith Colleges",191630,"2014-04-24","private",FALSE
+NA,25,"MA","active","Massachusetts",47,"Harvard University",166027,"2014-04-24","private",FALSE
+NA,48,"TX","active","Texas",63,"University of Texas-Pan American",227368,"2014-04-21","public",FALSE
+NA,51,"VA","active","Virginia",62,"College of William & Mary",231624,"2014-04-18","public",FALSE
+NA,40,"OK","active","Oklahoma",120,"Oklahoma State University at Stillwater",207388,"2014-04-10","public",FALSE
+NA,12,"FL","active","Florida",72,"Florida State University",134097,"2014-04-03","public",FALSE
+NA,42,"PA","active","Pennsylvania",73,"Franklin & Marshall College",212577,"2014-03-26","private",FALSE
+NA,6,"CA","active","California",8,"University of California at Berkeley",110635,"2014-03-25","public",FALSE
+NA,18,"IN","active","Indiana",93,"Vincennes University",152637,"2014-03-20","public",FALSE
+NA,18,"IN","active","Indiana",54,"Indiana University at Bloomington",151351,"2014-03-12","public",FALSE
+NA,39,"OH","active","Ohio",68,"Denison University",202523,"2014-03-07","private",FALSE
+NA,47,"TN","active","Tennessee",1,"Vanderbilt University",221999,"2014-03-03","private",FALSE
+"2016-07-07",38,"ND","resolved","North Dakota",50,"Minot State University",200253,"2014-02-26","public",TRUE
+NA,26,"MI","active","Michigan",88,"University of Michigan at Ann Arbor",170976,"2014-02-21","public",FALSE
+"2015-09-01",26,"MI","resolved","Michigan",61,"Michigan State University",171100,"2014-02-18","public",TRUE
+NA,55,"WI","active","Wisconsin",142,"University of Wisconsin at Whitewater",240189,"2014-02-14","public",FALSE
+"2014-02-10",6,"CA","resolved","California",106,"Samuel Merritt University",122296,"2014-01-24","private",TRUE
+NA,42,"PA","active","Pennsylvania",6,"Pennsylvania State University at University Park",214777,"2014-01-23","public",FALSE
+NA,42,"PA","active","Pennsylvania",26,"Carnegie Mellon University",211440,"2014-01-13","private",FALSE
+NA,11,"DC","active","District of Columbia",28,"Catholic University of America",131283,"2014-01-08","private",FALSE
+NA,25,"MA","active","Massachusetts",170,"Amherst College",164465,"2014-01-06","private",FALSE
+NA,17,"IL","active","Illinois",58,"Knox College",146427,"2014-01-02","private",FALSE
+"2014-06-27",36,"NY","resolved","New York",134,"Binghamton University",196079,"2013-12-31","public",TRUE
+NA,25,"MA","active","Massachusetts",70,"Emerson College",165662,"2013-12-23","private",FALSE
+NA,25,"MA","active","Massachusetts",24,"Boston University",164988,"2013-12-16","private",FALSE
+NA,13,"GA","active","Georgia",71,"Emory University",139658,"2013-12-13","private",FALSE
+NA,8,"CO","active","Colorado",76,"University of Denver",127060,"2013-12-12","private",FALSE
+"2015-02-17",9,"CT","resolved","Connecticut",136,"University of Connecticut",129020,"2013-12-06","public",TRUE
+NA,36,"NY","active","New York",169,"Sarah Lawrence College",195304,"2013-12-04","private",FALSE
+"2014-04-14",42,"PA","resolved","Pennsylvania",212,"Pennsylvania State University at University Park",214777,"2013-11-22","public",TRUE
+NA,37,"NC","active","North Carolina",30,"Guilford College",198613,"2013-11-18","private",FALSE
+"2014-02-19",36,"NY","resolved","New York",130,"State University of New York at Stony Brook",196097,"2013-11-01","public",TRUE
+"2016-09-09",24,"MD","resolved","Maryland",25,"Frostburg State University",162584,"2013-09-18","public",TRUE
+NA,42,"PA","active","Pennsylvania",99,"Temple University",216339,"2013-08-09","public",FALSE
+NA,42,"PA","active","Pennsylvania",181,"Swarthmore College",216287,"2013-07-12","private",FALSE
+"2014-06-23",39,"OH","resolved","Ohio",107,"Cedarville University",201654,"2013-07-01","private",TRUE
+NA,17,"IL","active","Illinois",32,"University of Chicago",144050,"2013-06-28","private",FALSE
+NA,6,"CA","active","California",37,"University of Southern California",123961,"2013-06-26","private",FALSE
+NA,8,"CO","active","Colorado",34,"University of Colorado at Boulder",126614,"2013-06-18","public",FALSE
+NA,33,"NH","active","New Hampshire",184,"Dartmouth College",182670,"2013-05-31","private",FALSE
+NA,15,"HI","active","Hawaii",78,"University of Hawaii-Manoa",141574,"2013-05-28","public",FALSE
+"2013-09-06",18,"IN","resolved","Indiana",116,"Hanover College",150756,"2013-05-22","private",TRUE
+"2016-06-09",6,"CA","resolved","California",173,"Occidental College",120254,"2013-05-02","private",TRUE
+NA,8,"CO","active","Colorado",102,"Regis University",127918,"2013-04-30","private",FALSE
+"2014-12-11",48,"TX","resolved","Texas",112,"Southern Methodist University",228246,"2013-04-19","private",TRUE
+"2014-12-11",48,"TX","resolved","Texas",171,"Southern Methodist University",228246,"2013-04-19","private",TRUE
+NA,16,"ID","active","Idaho",79,"University of Idaho",142285,"2013-04-18","public",FALSE
+"2017-03-24",39,"OH","resolved","Ohio",156,"Wittenberg University",206525,"2013-04-18","private",TRUE
+"2013-07-26",37,"NC","resolved","North Carolina",228,"Duke University",198419,"2013-03-28","private",TRUE
+NA,54,"WV","active","West Virginia",151,"West Virginia School of Osteopathic Medicine",237880,"2013-03-25","public",FALSE
+NA,37,"NC","active","North Carolina",90,"University of North Carolina at Chapel Hill",199120,"2013-03-01","public",FALSE
+NA,6,"CA","active","California",17,"Butte College",110246,"2013-02-27","public",FALSE
+"2016-10-31",36,"NY","resolved","New York",48,"City University of New York Hunter College",190594,"2013-02-08","public",TRUE
+NA,53,"WA","active","Washington",150,"Washington State University",236939,"2013-01-15","public",FALSE
+"2013-04-10",25,"MA","resolved","Massachusetts",209,"Massachusetts Maritime Academy",166692,"2012-11-30","public",TRUE
+"2013-05-22",17,"IL","resolved","Illinois",137,"University of Illinois at Urbana-Champaign",145637,"2012-07-03","public",TRUE
+"2013-06-24",24,"MD","resolved","Maryland",103,"St. Mary's College of Maryland",163912,"2012-06-29","public",TRUE
+"2013-08-27",25,"MA","resolved","Massachusetts",101,"Quincy College",167525,"2012-05-29","public",TRUE
+"2013-05-09",30,"MT","resolved","Montana",138,"University of Montana at Missoula",180489,"2012-05-04","public",TRUE
+"2012-06-14",8,"CO","resolved","Colorado",113,"Southwest Acupuncture College (Colo.)",436261,"2012-04-24","private",TRUE
+"2013-03-29",6,"CA","resolved","California",121,"Pitzer College",121257,"2012-03-29","private",TRUE
+"2013-08-15",21,"KY","resolved","Kentucky",117,"Kentucky Wesleyan College",157076,"2012-03-12","private",TRUE
+"2012-07-23",39,"OH","resolved","Ohio",158,"Xavier University (Ohio)",206622,"2012-02-07","private",TRUE
+NA,4,"AZ","active","Arizona",9,"Arizona State University",104151,"2012-01-26","public",FALSE
+"2012-02-07",39,"OH","resolved","Ohio",157,"Xavier University (Ohio)",206622,"2011-12-08","private",TRUE
+"2012-03-30",20,"KS","resolved","Kansas",227,"University of Kansas",155317,"2011-11-07","public",TRUE
+"2017-03-24",39,"OH","resolved","Ohio",155,"Wittenberg University",206525,"2011-08-25","private",TRUE
+"2012-02-03",34,"NJ","resolved","New Jersey",232,"Princeton University",186131,"2011-08-24","private",TRUE
+"2012-02-03",34,"NJ","resolved","New Jersey",231,"Princeton University",186131,"2011-08-24","private",TRUE
+"2014-12-11",48,"TX","resolved","Texas",111,"Southern Methodist University",228246,"2011-08-17","private",TRUE
+"2015-09-01",26,"MI","resolved","Michigan",60,"Michigan State University",171100,"2011-07-21","public",TRUE
+"2015-09-21",51,"VA","resolved","Virginia",84,"University of Virginia",234076,"2011-06-30","public",TRUE
+NA,25,"MA","active","Massachusetts",86,"University of Massachusetts at Amherst",166629,"2011-06-30","public",FALSE
+"2011-09-30",36,"NY","resolved","New York",213,"New School",193654,"2011-05-23","private",TRUE
+"2012-01-31",35,"NM","resolved","New Mexico",124,"Northern New Mexico College",188058,"2011-05-12","public",TRUE
+"2012-06-15",9,"CT","resolved","Connecticut",159,"Yale University",130794,"2011-04-01","private",TRUE
+"2011-08-31",11,"DC","resolved","District of Columbia",108,"George Washington University",131469,"2011-03-21","private",TRUE
+"2011-09-30",51,"VA","resolved","Virginia",95,"Virginia Commonwealth University",234030,"2011-02-09","public",TRUE
+"2012-01-17",54,"WV","resolved","West Virginia",118,"Glenville State College",237385,"2011-02-02","public",TRUE
+"2013-10-31",36,"NY","resolved","New York",176,"State University of New York system",195827,"2010-12-23","public",TRUE
+"2014-12-30",25,"MA","resolved","Massachusetts",165,"Harvard University",166027,"2010-12-21","private",TRUE
+"2014-11-05",34,"NJ","resolved","New Jersey",125,"Princeton University",186131,"2010-12-15","private",TRUE
+"2011-06-30",18,"IN","resolved","Indiana",217,"University of Notre Dame",152080,"2010-12-03","private",TRUE
+"2011-05-13",8,"CO","resolved","Colorado",247,"BioHealth College",100000,"2010-11-22","public",TRUE
+"2013-04-30",25,"MA","resolved","Massachusetts",221,"Tufts University",168148,"2010-10-26","private",TRUE
+"2014-04-28",25,"MA","resolved","Massachusetts",188,"Tufts University",168148,"2010-10-25","private",TRUE
+"2014-09-11",39,"OH","resolved","Ohio",177,"Ohio State University",204796,"2010-06-23","public",TRUE
+"2011-12-22",28,"MS","resolved","Mississippi",238,"University of Mississippi",176017,"2010-04-02","public",TRUE
+"2014-05-09",51,"VA","resolved","Virginia",250,"Virginia Military Institute",234085,"2008-08-05","public",TRUE
