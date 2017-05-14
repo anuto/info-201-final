@@ -22,7 +22,7 @@ title.IX.data <- fromJSON(title.IX.content)
 base.url.maps <- "https://maps.googleapis.com/maps/api/geocode/json"
 maps.app.id <- "AIzaSyCddaHkTvSYmsqCDwnFnvAMxhD0GFltFMU"
 
-findCoordinates <- function(name) {
+FindCoordinates <- function(name) {
   query.params <- list(address = name, key = maps.app.id)
   maps.response <- GET(base.url.maps, query = query.params)
   maps.content <- content(maps.response, "text")
@@ -30,11 +30,50 @@ findCoordinates <- function(name) {
   maps.data <- maps.data$results
   geometry <- maps.data$geometry
   coords <- geometry$location
-  return(as.list(coords))
+  to.return <- as.list(c(name = name, coords))
+  return(to.return)
 }
 
 college.names <- title.IX.data %>% group_by(college) %>% distinct()
-college.names <- unlist(college.names)
+college.names <- college.names$college
 is.vector(college.names)
 print(college.names)
-coordinates <- as.list(lapply(college.names, findCoordinates))
+
+# small.list <- c("University of Washington", "washington state university")
+# small.list.coord <- (lapply(small.list, FindCoordinates))
+
+coordinates <- (lapply(college.names, FindCoordinates))
+print(coordinates)
+GetLat <- function(coord) {
+  lat <- c()
+  for (item in coord) {
+    lat <- c(lat, item$lat)
+  }
+  return(lat)
+}
+
+GetLong <- function(coord) {
+  lat <- c()
+  for (item in coord) {
+    lat <- c(lat, item$lng)
+  }
+  return(lat)
+}
+
+GetName <- function(coord) {
+  lat <- c()
+  for (item in coord) {
+    if (is.null(item$lat) && is.null(item$lng))
+    lat <- c(lat, item$name)
+  }
+  return(lat)
+}
+
+lattitude <- GetLat(coordinates)
+longitude <- GetLong(coordinates)
+names <- GetName(coordinates)
+print(coordinates)
+print(names)
+schools.and.coordinates <- data.frame(names, lattitude, longitude)
+s.a.c <- data.frame(coordinates$name, coordinates$lattitude, coordinates$longitude)
+\
