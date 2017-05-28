@@ -77,3 +77,6 @@ print(names)
 schools.and.coordinates <- data.frame(names, lattitude, longitude)
 s.a.c <- data.frame(coordinates$name, coordinates$lattitude, coordinates$longitude)
 \
+
+
+#  data wrangling
