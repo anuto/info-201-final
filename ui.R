@@ -47,6 +47,8 @@ shinyUI(fluidPage(
              ),     
              tabPanel("About us",
                       includeMarkdown("aboutus.Rmd")
+            ),
+            tabPanel("Moving Forwards"
             )
              
   )))
