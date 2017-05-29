@@ -76,8 +76,11 @@ print(coordinates)
 print(names)
 schools.and.coordinates <- data.frame(names, lattitude, longitude)
 s.a.c <- data.frame(coordinates$name, coordinates$lattitude, coordinates$longitude)
-\
+
 
 install.packages("shinythemes")
-
+x <- read.csv("./data/title.ix.cases.csv")
+View(title.IX.data)
+install.packages("grid")
 #  data wrangling
+install.packages("jpeg")

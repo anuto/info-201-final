@@ -4,7 +4,10 @@ library(shinythemes)
 shinyUI(fluidPage(
   theme = shinytheme("flatly"),
   navbarPage("US College Campus Sexual Assaults",
-             tabPanel("Maps",
+             tabPanel("About the Data",
+                      includeMarkdown("aboutData.Rmd")
+             ),
+             tabPanel("Sexual Assaults by Location",
                       headerPanel("Sexual Assaults by Location"),
                       
                       sidebarPanel(
@@ -39,13 +42,11 @@ shinyUI(fluidPage(
                         ),
                         plotOutput("distPlot"))
              ),
-             tabPanel("Report"
-                      
-             ),
-             tabPanel("About this data"
-                        
-             ),
-             tabPanel("About us"
+             tabPanel("Summary of Findings",
+                      includeMarkdown("index.Rmd")
+             ),     
+             tabPanel("About us",
+                      includeMarkdown("aboutus.Rmd")
             )
              
   )))
