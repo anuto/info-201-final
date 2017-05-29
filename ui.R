@@ -10,11 +10,13 @@ shinyUI(fluidPage(
              tabPanel("Sexual Assaults by Location",
                       headerPanel("Sexual Assaults by Location"),
                       
+                      # year, population, public/private
                       sidebarPanel(
-                        textInput("txt", "Search by location :", "text here"),
-                        sliderInput("slider", "Year:", 2005, 2015, 1),
-                        actionButton("action", "Button"),
-                        actionButton("action2", "Button2", class = "btn-primary")
+                        selectInput("school.type", "Public/Private/Both:", choices = list("Public", "Private", "Both")),
+                        # textInput("txt", "Search by location :", "text here"),
+                        sliderInput("map.year.slider", "Year:", 2005, 2015, 1, sep = ""),
+                        selectInput("population.group.choice", "Choose campus size:", choices = list("Large", "Medium", "Small"))
+                        # actionButton("action2", "Button2", class = "btn-primary")
                         
                       ),
                       

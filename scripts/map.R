@@ -9,7 +9,7 @@
 #         latitude (lat)
 #         :D
 
-assault.map <- function(assault.data) {
+AssaultMap <- function(assault.data) {
 
   g <- list(
     scope = 'usa',
