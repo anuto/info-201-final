@@ -1,7 +1,7 @@
-install.packages("gdata")
 
 library(dplyr)
 library(gdata)
+library(zipcode)
 
 clean <- function(data, sortby) {
   data[, sortby] <- as.numeric(as.character(data[, sortby]))
@@ -79,3 +79,5 @@ new.filtered <- new %>%
                                select(INSTNM, Address, City, State, Zip, Sector_cd, Sector_desc, 
                                       Total.men, Total.women, Total, RAPE5, RAPE6, RAPE7.y, RAPE8, RAPE9.y,
                                       RAPE10, RAPE11, RAPE12, RAPE13.y, RAPE14, RAPE15)
+
+
