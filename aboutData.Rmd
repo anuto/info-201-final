@@ -3,26 +3,10 @@ title: "About this Data"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## Title IX
+> This project tracks federal investigations of colleges for possible violations of the gender-equity law Title IX involving alleged sexual violence. It includes all investigations in this wave of enforcement: those either open now or resolved since April 4, 2011, when the U.S. Department of Education’s Office for Civil Rights issued a “Dear Colleague” letter exhorting colleges to resolve students’ reports of sexual assault — and to protect them throughout the process.([The Chronicle of Higher Education](https://projects.chronicle.com/titleix/))
 
-## R Markdown
+## Campus Safety and Security
+> This data includes all data submitted through the Campus Safety and Security Survey during each year. The Campus Safety and Security Data is collected by the U.S Department of Education. It aims to assist schools to provide students a safe environment to study and to keep students, parents and employees well informed about campus security.([Campus Safety and Security](https://ope.ed.gov/campussafety/#/))
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Mishandled Dataset

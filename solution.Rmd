@@ -1,0 +1,43 @@
+---
+title: "Actions that you can take"
+output: html_document
+---
+### Things that students can do
+1. Share resources and groups that helps survivors.  
+    + Research show that 2% of survivors disclose their sexual assault to the police.
+2. Know your rights.  
+    + Title IX covers all realms of gender equity and prohibits sex-based discrimination in education. Get the facts on your rights under Title IX.  
+3. Check if your school complies with the Campus SaVE act
+    + The updated VAWA campus safety provisions, sometimes called the Campus SaVE Act, went into effect July 1, 2015, requiring colleges and universities to take [new steps](http://www.aauw.org/2014/10/20/final-vawa-step/) to end sexual violence. 
+    +  Consider searching “annual security report” on your school’s official website. The report should show up and have been updated on or by October 1. It should include new statistics about dating violence, domestic violence, and stalking and mention the steps the school is taking to comply with the new law.
+4. Write an op-ed.
+    + Op-ed pieces can inform and influence readers and can bring considerable attention to this cause. Research campus sexual assault, and then [write an op-ed](http://www.aauw.org/resource/lte-vs-op-ed/) for a school, local, or national newspaper or even a blog.
+5. Use social media to help spread awareness and advocate for social change.
+6. Start a conversation on victim-blaming and how to stop it.
+7. Hold a bystander intervention session.
+    + Bystanders can help prevent or stop sexual violence on campus and in other communities. Connect with programs that teach bystanders how to intervene in situations that involve sexual violence.
+8. Get involved in national campaigns.
+    + [Not Alone](https://www.justice.gov/ovw/protecting-students-sexual-assault), [The Clothesline Project](http://www.clotheslineproject.org/), [V-Day](http://www.vday.org/)
+9. Volunteer.  
+    + Help out at your [local rape crisis center](https://centers.rainn.org/). 
+10. Apply for funding.
+
+### Things that schools can do
+1. Encourage educational and prevention programming on campus.  
+    + Faculty can incorporate the issue of sexual assault into their curriculum whenever possible and whenever relevant to course content. 
+    + Faculty and staff can also offer student workshops facilitated by trained faculty, staff, and students on campus.
+2. Bring outside experts to campus.
+3. Participate in faculty and staff training.
+    + Faculty or staff members can be trained as facilitators and trainers to help their colleagues become more responsive to and aware of sexual violence issues. 
+    + Ask for trainings that address faculty and staff roles and responsibilities if a student discloses an assault, either directly or indirectly. Also learn how to make appropriate referrals when necessary.
+4. Ensure that resources are made available for survivors of sexual assault.
+5. Orgnize or participate in public awareness initiatives.
+6. Make sure your school has a Title IX coordinator and that she or he has updated resources.
+    + Title IX requires every school to have at least one employee on staff who is responsible for making sure the school is compliant with the law. This person is sometimes referred to as a Title IX coordinator, and she or he is responsible for overseeing all complaints of sex discrimination. The coordinator also identifies and addresses any patterns or systemic problems.
+
+Other helpful links:  
+- [Take the Pledge to Deliver New Title IX Resources to Your Local Schools](http://salsa4.salsalabs.com/o/50796/p/dia/action3/common/public/?action_KEY=14551&killorg=True)  
+- [4 Places to Get Funding for Your Next Anti-campus Sexual Assault](http://www.aauw.org/resource/funding-for-sexual-assault-prevention-initiatives/)
+- [How to prevent campus sexual assault? Ask students](https://www.washingtonpost.com/news/grade-point/wp/2015/09/30/how-to-prevent-campus-sexual-assaults-ask-students/?utm_term=.5a71922abd6c)  
+- [Carnegie Mellon students invent apps to head off sexual assaults](https://www.washingtonpost.com/news/grade-point/wp/2015/04/23/carnegie-mellon-students-invent-apps-to-head-off-sexual-assaults/?utm_term=.3c4fde88e55e)
+
