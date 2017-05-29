@@ -5,10 +5,10 @@
 
 # I want: number of cases (count), 
 #         percent of cases to population (pop.percent), 
-#         ratio of close to unclosed (unclosed.ratio),
 #         longitude (long),
 #         latitude (lat)
 #         :D
+
 assault.map <- function(assault.data) {
 
   g <- list(
@@ -26,7 +26,6 @@ assault.map <- function(assault.data) {
       text = ~paste(date, 
                     city, 
                     paste("total cases: ", count),
-                    paste("% unclosed cases: ", unclosed.ratio * 100), 
                     paste("cases per 100 students: ", pop.percent), 
               sep = "<br />"),
       color = ~unclosed.ratio, 
@@ -37,7 +36,7 @@ assault.map <- function(assault.data) {
     ) %>%
     colorbar(title = "Cases per 100 Students") %>%
     layout(
-      title = 'Shootings over 2016', geo = g
+      title = 'Cases of Sexual Assault per Year by Campus', geo = g
     )
 
 }

@@ -12,7 +12,7 @@ shinyUI(fluidPage(
                       
                       sidebarPanel(
                         textInput("txt", "Search by location :", "text here"),
-                        sliderInput("slider", "Slider input:", 1, 100, 30),
+                        sliderInput("slider", "Year:", 2005, 2015, 1),
                         actionButton("action", "Button"),
                         actionButton("action2", "Button2", class = "btn-primary")
                         
@@ -23,7 +23,7 @@ shinyUI(fluidPage(
                           tabPanel("Tab 1"),
                           tabPanel("Tab 2")
                         ),
-                        plotOutput("distPlot"))
+                        plotlyOutput("assaultMap"))
              ),
              tabPanel("Mishandled Sexual Assaults",
                       headerPanel("As flagged by Title IX"),

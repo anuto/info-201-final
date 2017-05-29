@@ -1,5 +1,5 @@
-  # From: http://shiny.rstudio.com/articles/basics.html
-  library(shiny)
+# From: http://shiny.rstudio.com/articles/basics.html
+library(shiny)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
@@ -11,12 +11,11 @@ shinyServer(function(input, output) {
   #     re-executed when inputs change
   #  2) Its output type is a plot
   
-  output$distPlot <- renderPlot({
-    x    <- faithful[, 2]  # Old Faithful Geyser data
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
+  output$assaultMap <- renderPlotly({
+    assault.map.data <- read.csv("./data/Total.sexual.assaults.05.15.csv", stringsAsFactors = FALSE)
+    source('./scripts/GetInfo.R')
     
-    # draw the histogram with the specified number of bins
-    hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    info <- GetInfo(survey.data)
   })
   
 })

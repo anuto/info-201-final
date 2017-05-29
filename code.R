@@ -79,7 +79,7 @@ s.a.c <- data.frame(coordinates$name, coordinates$lattitude, coordinates$longitu
 
 
 install.packages("shinythemes")
-x <- read.csv("./data/title.ix.cases.csv")
+x <- read.csv("./data/title.ix.cases.csv", stringsAsFactors = FALSE)
 View(title.IX.data)
 install.packages("grid")
 #  data wrangling
