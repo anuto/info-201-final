@@ -1,5 +1,7 @@
 # From: http://shiny.rstudio.com/articles/basics.html
 library(shiny)
+library(plotly)
+library(plyr)
 library(dplyr)
 library(stringi)
 
@@ -34,59 +36,64 @@ shinyServer(function(input, output) {
       min <- 5000
     }
     
-    t <- assault.map.data %>%
-                 select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                 rename(assault.map.data$TOTAL9 = pop) %>% 
-                 filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$pop < max, assault.map.data$pop > min)
-
-    public.private <- "Public" #input$school.type
+    public.private <- input$school.type
 
     # select only the data specified in maps of the year/population size/rank specified here
     if (year == 5) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   rename(pop = TOTAL5) %>% 
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL5 < max, assault.map.data$TOTAL5 > min))
+                   mutate(pop = TOTAL5, rape = RAPE5) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 6) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL6 < max, assault.map.data$TOTAL6 > min))
+                   mutate(pop = TOTAL6, rape = RAPE6) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 7) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL7 < max, assault.map.data$TOTAL7 > min))
+                   mutate(pop = TOTAL7, rape = RAPE7) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 8) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL8 < max, assault.map.data$TOTAL8 > min))
+                   mutate(pop = TOTAL8, rape = RAPE8) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 9) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL9 < max, assault.map.data$TOTAL9 > min))
+                   mutate(pop = TOTAL9, rape = RAPE9) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 10) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL10 < max, assault.map.data$TOTAL10 > min))
+                   mutate(pop = TOTAL10, rape = RAPE10) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 11) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL11 < max, assault.map.data$TOTAL11 > min))
+                   mutate(pop = TOTAL11, rape = RAPE11) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 12) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL12 < max, assault.map.data$TOTAL12 > min))
+                   mutate(pop = TOTAL12, rape = RAPE12) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 13) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL13 < max, assault.map.data$TOTAL13 > min))
+                   mutate(pop = TOTAL13, rape = RAPE13) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 14) {
       AssaultMap(assault.map.data %>%
-                   select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                   filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL14 < max, assault.map.data$TOTAL14 > min))
+                   mutate(pop = TOTAL14, rape = RAPE14) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     } else if (year == 15) {
       AssaultMap(assault.map.data %>%
-                 select(ends_with(toString(year)), latitude, longitude, INSTNM, primary_city, county) %>%
-                 filter(grepl(public.private, assault.map.data$sector_desc.x), assault.map.data$TOTAL15 < max, assault.map.data$TOTAL15 > min))
+                   mutate(pop = TOTAL15, rape = RAPE15) %>% 
+                   select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
+                   filter(grepl(public.private, assault.map.data$sector_desc.x), pop < max, pop > min))
     }
 
   })

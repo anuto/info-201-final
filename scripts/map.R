@@ -1,16 +1,13 @@
 # map :D
 
-# temporary data finding
-# assault.data <- read.csv("./data/title.ix.cases.csv", stringsAsFactors = FALSE)
-
-# I want: number of cases (count), 
-#         percent of cases to population (pop.percent), 
-#         longitude (long),
-#         latitude (lat)
+# I want: number of cases (rape), 
+#         percent of cases to population (rape / pop * 1000), 
+#         longitude (longitude),
+#         latitude (latitude)
 #         :D
-
 AssaultMap <- function(assault.data) {
-
+  pop.percent <- (assault.data$rape / assault.data$pop) * 1000
+  
   g <- list(
     scope = 'usa',
     projection = list(type = 'albers usa'),
@@ -23,15 +20,15 @@ AssaultMap <- function(assault.data) {
   
   plot_geo(assault.data, lat = ~latitude, lon = ~longitude) %>%
     add_markers(
-      text = ~paste(date, 
-                    city, 
-                    paste("total cases: ", count),
-                    paste("cases per 1000 students: ", ), 
+      text = ~paste(primary_city, 
+                    county,
+                    paste("total cases: ", assault.data$rape),
+                    paste("cases per 1000 students: ", pop.percent),
               sep = "<br />"),
-      color = ~unclosed.ratio, 
+      color = ~rape,
       colors = c("#ffffff", "#ff0000"),
-      symbol = I("circle"), 
-      size = ~pop.percent, 
+      symbol = I("circle"),
+      size = ~pop.percent,
       hoverinfo = "text"
     ) %>%
     colorbar(title = "Cases per 100 Students") %>%
