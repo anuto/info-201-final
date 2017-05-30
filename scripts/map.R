@@ -21,12 +21,12 @@ AssaultMap <- function(assault.data) {
     subunitwidth = 0.5
   )
   
-  plot_geo(assault.data, lat = ~lat, lon = ~long) %>%
+  plot_geo(assault.data, lat = ~latitude, lon = ~longitude) %>%
     add_markers(
       text = ~paste(date, 
                     city, 
                     paste("total cases: ", count),
-                    paste("cases per 100 students: ", pop.percent), 
+                    paste("cases per 1000 students: ", ), 
               sep = "<br />"),
       color = ~unclosed.ratio, 
       colors = c("#ffffff", "#ff0000"),
