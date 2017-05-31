@@ -18,20 +18,24 @@ AssaultMap <- function(assault.data) {
     subunitwidth = 0.5
   )
   
-  plot_geo(assault.data, lat = ~latitude, lon = ~longitude) %>%
+  plot_geo(assault.data, 
+           lat = ~latitude, 
+           lon = ~longitude,
+           text = ~paste(primary_city, 
+                         county,
+                         paste("total cases: ", assault.data$rape),
+                         paste("cases per 1000 students: ", pop.percent),
+                         sep = "<br />")
+           ) %>%
     add_markers(
-      text = ~paste(primary_city, 
-                    county,
-                    paste("total cases: ", assault.data$rape),
-                    paste("cases per 1000 students: ", pop.percent),
-              sep = "<br />"),
       color = ~rape,
+      opacity = 0.5,
       colors = c("#ffffff", "#ff0000"),
       symbol = I("circle"),
       size = ~pop.percent,
       hoverinfo = "text"
     ) %>%
-    colorbar(title = "Cases per 100 Students") %>%
+    colorbar(title = "Number of Reported Rape Cases") %>%
     layout(
       title = 'Cases of Sexual Assault per Year by Campus', geo = g
     )

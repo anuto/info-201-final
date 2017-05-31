@@ -12,20 +12,13 @@ shinyUI(fluidPage(
                       
                       # year, population, public/private
                       sidebarPanel(
-                        selectInput("school.type", "Public/Private/Both:", choices = list("Public", "Private", "Both")),
-                        # textInput("txt", "Search by location :", "text here"),
+                        selectInput("school.type", "Public/Private/Both:", choices = list("Public", "Private")),
                         sliderInput("map.year.slider", "Year:", 2005, 2015, 1, sep = ""),
                         selectInput("population.group.choice", "Choose campus size:", choices = list("Large", "Medium", "Small"))
-                        # actionButton("action2", "Button2", class = "btn-primary")
-                        
+
                       ),
                       
-                      mainPanel(
-                        tabsetPanel(
-                          tabPanel("Tab 1"),
-                          tabPanel("Tab 2")
-                        ),
-                        plotlyOutput("assaultMap"))
+                      mainPanel(plotlyOutput("assaultMap"))
              ),
              tabPanel("Mishandled Sexual Assaults",
                       headerPanel("As flagged by Title IX"),
