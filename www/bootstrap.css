@@ -4965,10 +4965,14 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #ecf0f1;
+  
+  /*background-image: url('https://raw.githubusercontent.com/anuto/info-201-final/master/pics/Capture5.PNG');*/
+  background-image: url('https://github.com/anuto/info-201-final/blob/master/pics/Capture6.PNG?raw=true');
+  background-size: cover;
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: #d3d3d3;
 }
 .jumbotron p {
   margin-bottom: 15px;

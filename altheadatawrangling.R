@@ -4,7 +4,7 @@ library(dplyr)
 library(gdata)
 library(zipcode)
 library(stringi)
-
+getwd()
 # get rid of weird formats
 clean <- function(data, sortby) {
   data[, sortby] <- as.numeric(as.character(data[, sortby]))
@@ -148,3 +148,5 @@ write.csv(new2, "Total.sexual.assaults.05.15.csv", row.names = FALSE)
 write.csv(x, "Updated.total.05.15.csv", row.names = FALSE)
 x <- read.csv("Total.sexual.assaults.05.15.csv", stringsAsFactors = FALSE)
 View(x)
+
+install.packages("shinyLP")
