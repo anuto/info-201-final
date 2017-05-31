@@ -4,7 +4,10 @@ library(plotly)
 library(shinyLP)
 
 shinyUI(fluidPage(
-  theme = shinytheme('flatly'),
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "bootstrap.css")
+  ),
+  
   jumbotron("US College Campus Sexual Assaults","", button = FALSE),
   
   navbarPage("",

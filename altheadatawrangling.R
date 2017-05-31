@@ -4,7 +4,7 @@ library(dplyr)
 library(gdata)
 library(zipcode)
 library(stringi)
-
+getwd()
 # get rid of weird formats
 clean <- function(data, sortby) {
   data[, sortby] <- as.numeric(as.character(data[, sortby]))
