@@ -13,10 +13,10 @@ shinyUI(fluidPage(
                       
                       # year, population, public/private
                       sidebarPanel(
-                        selectInput("school.type", "Public/Private/Both:", choices = list("Public", "Private")),
+                        checkboxInput("public.school", "Public", value = TRUE),
+                        checkboxInput("private.school", "Private", value = TRUE),
                         sliderInput("map.year.slider", "Year:", 2005, 2015, 1, sep = ""),
-                        selectInput("population.group.choice", "Choose campus size:", choices = list("Large", "Medium", "Small"))
-
+                        sliderInput("map.population", "Campus Population:", 0, 80000, 1000, value = c(0, 5000), dragRange = TRUE)
                       ),
                       
                       mainPanel(plotlyOutput("assaultMap"))

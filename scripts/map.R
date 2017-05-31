@@ -23,6 +23,7 @@ AssaultMap <- function(assault.data) {
            lon = ~longitude,
            text = ~paste(primary_city, 
                          county,
+                         INSTNM,
                          paste("total cases: ", assault.data$rape),
                          paste("cases per 1000 students: ", pop.percent),
                          sep = "<br />")
