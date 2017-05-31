@@ -18,35 +18,35 @@ shinyUI(fluidPage(
                                  We have created visualizations to illustrate this data, a report to summarise,
                                  and a list of resources to help solve this problem."),
              fluidRow(
-               column(4, thumbnail_label(image = NULL, label = 'Explore by location',
+               column(2, thumbnail_label(image = NULL, label = 'Explore by location',
                                          content = 'See the distribution of reported sexual assaults across 
                                          college campuses in the US over the last decade. Compare and contrast
                                          colleges by population, sector, and gender ratio.',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Explore map')
                ),
-               column(4, thumbnail_label(image = "", label = 'Explore mishandled cases',
+               column(2, thumbnail_label(image = "", label = 'Explore mishandled cases',
                                          content = 'In 2015 Department of Education investigated sexual assault
                                          cases involving student athletes. They found 400 cases to have been
                                          mishandled.',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Explore cases')
                ),
-               column(4, thumbnail_label(image = "", label = 'Explore our solution',
+               column(2, thumbnail_label(image = "", label = 'Explore our solution',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Get involved')
                ),
-               column(4, thumbnail_label(image = 'C:/Users/Althea/Desktop/info201/info-201-final/pics/map.PNG', label = 'Explore our findings',
+               column(2, thumbnail_label(image = 'C:/Users/Althea/Desktop/info201/info-201-final/pics/map.PNG', label = 'Explore our findings',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Get involved')
                
                ),
-               column(4, thumbnail_label(image = "", label = 'Understanding our Data',
+               column(2, thumbnail_label(image = "", label = 'Understanding our Data',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'See more')
                ),
-               column(4, thumbnail_label(image = "", label = 'Meet the Team',
+               column(2, thumbnail_label(image = "", label = 'Meet the Team',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'See more')
