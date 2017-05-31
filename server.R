@@ -89,4 +89,9 @@ shinyServer(function(input, output) {
 
   })
   
+  output$timeline <- renderPlotly ({
+    source('./scripts/timeline.R')
+    Timeline(input$oc)
+  })
+  
 })

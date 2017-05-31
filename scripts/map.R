@@ -12,7 +12,7 @@ AssaultMap <- function(assault.data) {
     scope = 'usa',
     projection = list(type = 'albers usa'),
     showland = TRUE,
-    landcolor = toRGB("black"),
+    landcolor = toRGB("grey85"),
     subunitcolor = toRGB("white"),
     countrywidth = 0.5,
     subunitwidth = 0.5
@@ -30,7 +30,7 @@ AssaultMap <- function(assault.data) {
     add_markers(
       color = ~rape,
       opacity = 0.5,
-      colors = c("#ffffff", "#ff0000"),
+      colors = c("#000000", "#ff0000"),
       symbol = I("circle"),
       size = ~pop.percent,
       hoverinfo = "text"
