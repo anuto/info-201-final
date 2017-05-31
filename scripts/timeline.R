@@ -2,7 +2,7 @@ library(plotly)
 library(gdata)
 library(dplyr)
 # Read data
-data <- read.csv('./data/title.ix.cases.csv')
+data <- read.csv('title.ix.cases.csv')
 # Read still open case data
 open <- data %>% filter(is.closed == "FALSE")
 # Set the date into the form that is usable.
@@ -33,4 +33,3 @@ p <- plot_ly(x = ~open.case, y = 0) %>% layout(yaxis = ax)
 # Draw the timeline plot for closed cases
 g <- plot_ly(x = ~closed.case.open.date, y = 0, text = paste(duration, "days"), color = 'orange') %>% 
   layout(yaxis = ax)
-g

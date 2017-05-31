@@ -1,5 +1,6 @@
 library(shiny)
 library(shinythemes)
+library(plotly)
 
 shinyUI(fluidPage(
   theme = shinytheme("flatly"),
@@ -21,10 +22,7 @@ shinyUI(fluidPage(
                       ),
                       
                       mainPanel(
-                        tabsetPanel(
-                          tabPanel("Tab 1"),
-                          tabPanel("Tab 2")
-                        ),
+                       
                         plotlyOutput("assaultMap"))
              ),
              tabPanel("Mishandled Sexual Assaults",
@@ -50,7 +48,8 @@ shinyUI(fluidPage(
              tabPanel("About us",
                       includeMarkdown("aboutus.Rmd")
             ),
-            tabPanel("Moving Forwards"
+            tabPanel("Moving Forwards",
+                     includeMarkdown("solution.Rmd")
             )
              
   )))
