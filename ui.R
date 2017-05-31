@@ -12,7 +12,6 @@ shinyUI(fluidPage(
   
   navbarPage("",
              tabPanel("Home",
-                       jumbotron("HELLO SHINY?", "", button = FALSE),
                        panel_div(class_type = "primary", panel_title = "Directions",
                                  content = "How to use the app"),
              fluidRow(
