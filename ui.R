@@ -2,11 +2,16 @@ library(shiny)
 library(shinythemes)
 library(plotly)
 library(shinyLP)
+library(markdown)
+library(rmarkdown)
 
 shinyUI(fluidPage(
+  theme = 'bootstrap.css',
   tags$head(
     tags$link(rel = "stylesheet", type = "text/css", href = "bootstrap.css")
   ),
+  
+  includeCSS('./www/bootstrap.css'),
   
   jumbotron("U.S College Campus Sexual Assaults","", button = FALSE),
   
@@ -96,7 +101,7 @@ shinyUI(fluidPage(
                       includeMarkdown("solution.Rmd")
              ),
              tabPanel("About us",
-                      includeMarkdown("aboutus.Rmd")
+                     htmlOutput('au')
             )
   ) ))
  

@@ -5,6 +5,7 @@ library(dplyr)
 library(stringi)
 library(shinyLP)
 library(gdata)
+library(knitr)
 
 shinyServer(function(input, output) {
   
@@ -109,4 +110,9 @@ shinyServer(function(input, output) {
     Timeline(input$oc)
   })
   
+  output$aboutus <- renderUI({
+    HTML(markdown::markdownToHTML(knit('aboutus.html', quiet = TRUE)))
+  })
+  
+  output$au <- renderUI(includeHTML('./www/aboutus.html'), )
 })
