@@ -8,15 +8,22 @@ shinyUI(fluidPage(
     tags$link(rel = "stylesheet", type = "text/css", href = "bootstrap.css")
   ),
   
-  jumbotron("US College Campus Sexual Assaults","", button = FALSE),
+  jumbotron("U.S College Campus Sexual Assaults","", button = FALSE),
   
   navbarPage("",
              tabPanel("Home",
                        panel_div(class_type = "primary", panel_title = 'About this project',
-                                 content = "We have found data from the Department of Education on both
-                                 reported and reported but mishandled sexual assaults on college campuses.
-                                 We have created visualizations to illustrate this data, a report to summarise,
-                                 and a list of resources to help solve this problem."),
+                                 content = "The purpose of this report is to inform perspective and current college students, 
+                                            as well as their parents, about the campus safety in terms of sexual assault. After
+                                            reading this report, we hope our target audiences can make a better decision about 
+                                           what colleges to attend and increase current students’ awareness regarding their college’s safety."),
+                        panel_div(class_type = 'primary', panel_title = "Structure",
+                                  content = 'We have found data from the Department of Education on both reported and reported but 
+                                              mishandled sexual assaults on college campuses. Please refer to “About the Data” for
+                                              more information. Using these data, we create an interactive map to display sexual 
+                                                assaults by location. You can explore data from 2005 to 2015 based on different criterias. 
+                                              Additionally, we create a time line to present the mishandled sexual assault cases. We also 
+                                              provide our insightful findings and suggestion for your reference.'),                    
              fluidRow(
                column(2, thumbnail_label(image = NULL, label = 'Explore by location',
                                          content = 'See the distribution of reported sexual assaults across 
