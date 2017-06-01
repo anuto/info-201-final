@@ -7,8 +7,9 @@ library(shinyLP)
 library(gdata)
 library(knitr)
 library(shiny.router)
+library(shinydashboard)
 
-shinyServer(function(input, output) {
+shinyServer(function(input, output, session) {
 
   output$assaultMap <- renderPlotly({
     source('./scripts/map.R')
@@ -117,4 +118,9 @@ shinyServer(function(input, output) {
   output$au <- renderUI(includeHTML('aboutus.html'))
   
   output$report <- renderUI(includeHTML('index.html'))
+  
+    observeEvent(input$do, {
+      updateNavbarPage(session, "timeline", selected = NULL)
+    }
+)
 })

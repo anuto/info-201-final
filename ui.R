@@ -67,7 +67,7 @@ shinyUI(fluidPage(
                ),
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'people.png', label = 'Meet the Team',
                                          content = 'We\'re just INFO 201 students, nothing too exciting!',
-                                         button_link = 'http://getbootstrap.com/', button_label = 'See more')
+                                         actionLink("do", 'See more'), 'See More')
                )
              )
              ),
@@ -85,7 +85,7 @@ shinyUI(fluidPage(
                       mainPanel(plotlyOutput("assaultMap"))
              ),
              tabPanel("Mishandled Sexual Assaults",
-                      id = 900,
+                      id = 'timeline',
                       headerPanel("As flagged by Title IX"),
                       sidebarPanel(
                         textInput("txt", "Search by school:", "text here"),
