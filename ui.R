@@ -75,6 +75,8 @@ shinyUI(fluidPage(
                       
                       # year, population, public/private
                       sidebarPanel(
+                        textInput("maptxt", "Search by school:"),
+                        checkboxInput("include", "Include 0 counts?", value = TRUE),
                         checkboxInput("public.school", "Public", value = TRUE),
                         checkboxInput("private.school", "Private", value = TRUE),
                         sliderInput("map.year.slider", "Year:", 2005, 2015, 1, sep = ""),
@@ -87,14 +89,8 @@ shinyUI(fluidPage(
                       id = 'timeline',
                       headerPanel("As flagged by Title IX"),
                       sidebarPanel(
-                        textInput("txt", "Search by school:", "text here"),
-                        selectizeInput("state", "Search by state: ", "text here"),
-                        selectInput("oc", "Open or closed cases?", choices = list("Open", "Closed")),
-                        actionButton('do', 'hmmmm'),
-                        actionButton("action2", "Button2", class = "btn-primary")
-                        
-                      ),
-                      
+                        textInput("txt", "Search by school:"),
+                        selectInput("oc", "Open or closed cases?", choices = list("Open", "Closed"))),
                       mainPanel(plotlyOutput("timeline"))
              ),
              tabPanel("Summary of Findings",

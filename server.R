@@ -6,6 +6,7 @@ library(stringi)
 library(shinyLP)
 library(gdata)
 library(knitr)
+library(shiny.router)
 library(shinydashboard)
 
 shinyServer(function(input, output, session) {
@@ -35,73 +36,93 @@ shinyServer(function(input, output, session) {
     min <- input$map.population[1]
     max <- input$map.population[2]
     
+    zero.filter <- -1
+    if (!input$include) {
+      zero.filter <- 0
+    }
+    
+    if (input$maptxt != "") {
+      assault.map.data <- assault.map.data %>% filter(INSTNM == input$maptxt)
+    }
+
     # select only the data specified in maps of the year/population size/rank specified here
     if (year == 5) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL5, rape = RAPE5) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 6) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL6, rape = RAPE6) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 7) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL7, rape = RAPE7) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 8) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL8, rape = RAPE8) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 9) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL9, rape = RAPE9) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 10) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL10, rape = RAPE10) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 11) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL11, rape = RAPE11) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 12) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL12, rape = RAPE12) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 13) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL13, rape = RAPE13) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 14) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL14, rape = RAPE14) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     } else if (year == 15) {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL15, rape = RAPE15) %>% 
                    select(pop, rape, latitude, longitude, INSTNM, primary_city, county) %>%
                    filter(grepl(public.school, assault.map.data$sector_desc.x),
-                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min))
+                          grepl(private.school, assault.map.data$sector_desc.x), pop < max, pop > min,
+                          rape > zero.filter))
     }
 
   })
@@ -109,7 +130,9 @@ shinyServer(function(input, output, session) {
   output$timeline <- renderPlotly ({
     source('./scripts/timeline.R')
     df <- read.csv('./data/title.ix.cases.csv')
-    
+    if (input$txt != "") {
+      df <- df %>% filter(college == input$txt)
+    }
     
     Timeline(input$oc, df)
   })
@@ -118,7 +141,5 @@ shinyServer(function(input, output, session) {
   
   output$report <- renderUI(includeHTML('index.html'))
   
-    observeEvent(input$do, {
-      updateNavbarPage(session, "report")
-    })
+
 })
