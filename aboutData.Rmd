@@ -1,21 +1,20 @@
 ---
-title: "About this Data"
+title: "About the Data"
 output: html_document
 ---
 
-## Title IX
-> This project tracks federal investigations of colleges for possible violations of the gender-equity law Title IX involving alleged sexual violence. It includes all investigations in this wave of enforcement: those either open now or resolved since April 4, 2011, when the U.S. Department of Education’s Office for Civil Rights issued a “Dear Colleague” letter exhorting colleges to resolve students’ reports of sexual assault — and to protect them throughout the process.([The Chronicle of Higher Education](https://projects.chronicle.com/titleix/))
-
-**More about this dataset:**
-
-## Campus Safety and Security
-> This data includes all data submitted through the Campus Safety and Security Survey during each year. The Campus Safety and Security Data is collected by the U.S Department of Education. It aims to assist schools to provide students a safe environment to study and to keep students, parents and employees well informed about campus security.([Campus Safety and Security](https://ope.ed.gov/campussafety/#/))   
-
-**More about this dataset:** This dataset is drawn from the OPE Campus Safety and Security Statistics website database to crime and fire statistics of 2010 data collection, which are submitted annually by web-based data collection. 
-
-## Mishandled Dataset
+## Title IX API
+This information was collected under the Title IX amendment by the Department of Education. We use this API to retrieve information about reported but mishandled cases. Specifically, the data set contains information about whether the case closed, the location of the case, the cases’ open date and the information about the university. 
 
 
-#### Datasets download links:  
+## Campus Safety and Security Data
+This data includes all data submitted through the Campus Safety and Security Survey during 2005 to 2015. It is collected by the U.S Department of Education and aims to assist schools to provide students a safe environment to study and to keep students, parents and employees well informed about campus security. This data set contains basic information (population, address, zip code, city, etc.) about universities and the number of rape cases in each year (2005 - 2015).
+
+
+## Data Limitation
+We aware that the reported rape cases are only part of all sexual assaults. Multiple surveys have pointed out that there is at least half of the sexual assaults goes unreported to police. We tried to retrieve such information but were unable to get any raw data about unreported sexual assaults. Our team hopes to address this defect in the future once we have sufficient unreported data. 
+
+
+#### Data Source:  
 - [Title IX Sexual Assault Tracker API documentation](https://projects.chronicle.com/titleix/api/v1/docs/)   
 - [Campus Safety and Security Dataset](https://ope.ed.gov/campussafety/#/datafile/list)

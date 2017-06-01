@@ -8,45 +8,52 @@ shinyUI(fluidPage(
     tags$link(rel = "stylesheet", type = "text/css", href = "bootstrap.css")
   ),
   
-  jumbotron("US College Campus Sexual Assaults","", button = FALSE),
+  jumbotron("U.S College Campus Sexual Assaults","", button = FALSE),
   
   navbarPage("",
              tabPanel("Home",
                        panel_div(class_type = "primary", panel_title = 'About this project',
-                                 content = "We have found data from the Department of Education on both
-                                 reported and reported but mishandled sexual assaults on college campuses.
-                                 We have created visualizations to illustrate this data, a report to summarise,
-                                 and a list of resources to help solve this problem."),
+                                 content = "The purpose of this report is to inform perspective and current college students, 
+                                            as well as their parents, about the campus safety in terms of sexual assault. After
+                                            reading this report, we hope our target audiences can make a better decision about 
+                                           what colleges to attend and increase current students’ awareness regarding their college’s safety."),
+                        panel_div(class_type = 'primary', panel_title = "Structure",
+                                  content = 'We have found data from the Department of Education on both reported and reported but 
+                                              mishandled sexual assaults on college campuses. Please refer to “About the Data” for
+                                              more information. Using these data, we create an interactive map to display sexual 
+                                                assaults by location. You can explore data from 2005 to 2015 based on different criterias. 
+                                              Additionally, we create a time line to present the mishandled sexual assault cases. We also 
+                                              provide our insightful findings and suggestion for your reference.'),                    
              fluidRow(
-               column(2, thumbnail_label(image = NULL, label = 'Explore by location',
+               column(4, thumbnail_label(image = NULL, label = 'Explore by location',
                                          content = 'See the distribution of reported sexual assaults across 
                                          college campuses in the US over the last decade. Compare and contrast
                                          colleges by population, sector, and gender ratio.',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Explore map')
                ),
-               column(2, thumbnail_label(image = "", label = 'Explore mishandled cases',
+               column(3, thumbnail_label(image = "", label = 'Explore mishandled cases',
                                          content = 'In 2015 Department of Education investigated sexual assault
                                          cases involving student athletes. They found 400 cases to have been
                                          mishandled.',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Explore cases')
                ),
-               column(2, thumbnail_label(image = "", label = 'Explore our solution',
+               column(4, thumbnail_label(image = "", label = 'Explore our solution',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Get involved')
                ),
-               column(2, thumbnail_label(image = 'C:/Users/Althea/Desktop/info201/info-201-final/pics/map.PNG', label = 'Explore our findings',
+               column(4, thumbnail_label(image = 'C:/Users/Althea/Desktop/info201/info-201-final/pics/map.PNG', label = 'Explore our findings',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'Get involved')
                
                ),
-               column(2, thumbnail_label(image = "", label = 'Understanding our Data',
+               column(3, thumbnail_label(image = "", label = 'Understanding our Data',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'See more')
                ),
-               column(2, thumbnail_label(image = "", label = 'Meet the Team',
+               column(3, thumbnail_label(image = "", label = 'Meet the Team',
                                          content = 'Whether you\'re a student or university employee, here are
                                          some ways you can do your part to help protect students',
                                          button_link = 'http://getbootstrap.com/', button_label = 'See more')
