@@ -2,13 +2,13 @@ library(plotly)
 library(gdata)
 library(dplyr)
 # Read data
-data <- read.csv('./data/title.ix.cases.csv')
+title.ix.data <- read.csv('./data/title.ix.cases.csv')
 # Read still open case data
-open <- data %>% filter(is.closed == "FALSE")
+open <- title.ix.data %>% filter(is.closed == "FALSE")
 # Set the date into the form that is usable.
 open.case <- as.Date(open$opened, format = "%m/%d/%y")
 # Read closed case data
-close <- data %>% filter(is.closed == "TRUE") %>% select(case_id, opened, closed)
+close <- title.ix.data %>% filter(is.closed == "TRUE") %>% select(case_id, opened, closed)
 # Set the open date int othe form that is usable
 closed.case.open.date <- as.Date(close$opened, format = "%m/%d/%y")
 # Set the close date int othe form that is usable
