@@ -1,0 +1,9 @@
+structure:
+
+ panel_div(class_type = 'primary', panel_title = "Structure",
+                                  content = 'We have found data from the Department of Education on both reported and reported but 
+                                              mishandled sexual assaults on college campuses. Please refer to ‚??About the Data‚?ù for
+                                              more information. Using these data, we create an interactive map to display sexual 
+                                                assaults by location. You can explore data from 2005 to 2015 based on different criterias. 
+                                              Additionally, we have created a time line to present sexual assault cases that are being investigated for mishandling. We also 
+                                              provide our insightful findings and suggestion for your reference.'),       

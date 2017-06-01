@@ -5,9 +5,11 @@ library(dplyr)
 library(stringi)
 library(shinyLP)
 library(gdata)
+library(knitr)
+library(shinydashboard)
 
-shinyServer(function(input, output) {
-  
+shinyServer(function(input, output, session) {
+
   output$assaultMap <- renderPlotly({
     source('./scripts/map.R')
 
@@ -106,7 +108,17 @@ shinyServer(function(input, output) {
   
   output$timeline <- renderPlotly ({
     source('./scripts/timeline.R')
-    Timeline(input$oc)
+    df <- read.csv('./data/title.ix.cases.csv')
+    
+    
+    Timeline(input$oc, df)
   })
   
+  output$au <- renderUI(includeHTML('aboutus.html'))
+  
+  output$report <- renderUI(includeHTML('index.html'))
+  
+    observeEvent(input$do, {
+      updateNavbarPage(session, "report")
+    })
 })

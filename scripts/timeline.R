@@ -2,10 +2,10 @@ library(plotly)
 library(gdata)
 library(dplyr)
 
-Timeline <- function(oc) {
+Timeline <- function(oc, this.data) {
   
   # Read data
-  data <- read.csv('./data/title.ix.cases.csv')
+  data <- this.data
   # Read still open case data
   open <- data %>% filter(is.closed == "FALSE")
   # Set the date into the form that is usable.
@@ -32,10 +32,14 @@ Timeline <- function(oc) {
   
   # Draw the timeline plot for open cases
   if(oc == "Open") {
-    p <- plot_ly(x = ~open.case, y = 0, color = 'blue') %>% layout(yaxis = ax)
+    p <- plot_ly(x = ~open.case, y = 0, color = 'blue') %>% layout(yaxis = ax, 
+                                                                   title = "Open Cases",
+                                                                   xaxis = list(title = "year"))
   } else{
   # Draw the timeline plot for closed cases
   g <- plot_ly(x = ~closed.case.open.date, y = 0, text = paste(duration, "days"), color = 'orange') %>% 
-    layout(yaxis = ax)
+    layout(yaxis = ax, 
+           xaxis = list(title = "year"),
+           title = "Closed Cases")
   }
 }

@@ -2,7 +2,6 @@ install.packages("XML")
 
 library(httr)
 library(jsonlite)
-library(XML)
 library(dplyr)
 
 base.url.titleIX <- "http://projects.chronicle.com/titleix/api/v1/cases/"

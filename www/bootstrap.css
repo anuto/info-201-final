@@ -4965,9 +4965,7 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #ecf0f1;
-  
-  /*background-image: url('https://raw.githubusercontent.com/anuto/info-201-final/master/pics/Capture5.PNG');*/
-  background-image: url('https://github.com/anuto/info-201-final/blob/master/pics/capture5.PNG?raw=true');
+  background-image: url('https://raw.githubusercontent.com/anuto/info-201-final/master/pics/final.png');
   background-size: cover;
 }
 .jumbotron h1,

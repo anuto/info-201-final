@@ -4,10 +4,14 @@ output: html_document
 ---
 
 ##`Alissa`
-
+### `Chartographer, Reporter`
 <img style="float: left;" src="./pics/alissa.jpg"; width = '400px'>
-<br><br>
-<br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An accomplished holder of a high school ~~diploma~~ equivalency certificate,
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Madam Adornato aspires one day to become the first human being to use 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; every type of restroom in the world. She considers professional wrestler 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kenneth Omega and singer turned professional plastic surgeonee Pete <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Burns to be her idols. The latter, in particular, inspired her to create the 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; stunning visuals present in our map.<br>
 <br><br>
 <br><br>
 <br><br>
@@ -18,9 +22,10 @@ output: html_document
 <br><br>
 
 ##`Althea`
-
+### `Shiny efficianado, #aesthetic considerer`
 <img style="float: left;" src="./pics/althea.jpg"; width = '400px'>
-<br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I consider my great accomplishment to be the time I photoshopped my
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; favorite professional wrestlers into a modern day retelling of a biblical <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; visual. Does that make me a hipster? Does using the word #aesthetic? I don't &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  know, you tell me. Get back to me.<br>
 <br><br>
 <br><br>
 <br><br>
@@ -33,10 +38,12 @@ output: html_document
 
 
 ##`Albert`
-
+### `Body man`
 <img style="float: left;" src="./pics/albert.JPG"; width = '400px'>
-<br><br>
-<br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is a body man, you ask?
+<br>
+<br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...Let's hope you never have to find out.
 <br><br>
 <br><br>
 <br><br>
@@ -47,11 +54,14 @@ output: html_document
 <br><br>
 
 ##`Echo`
-
+### `Goddess of (the) Time(line), Problem Solver/Solution Finder`
 <img style="float: left;" src="./pics/echo.jpg"; width = '400px'>
-<br><br>
-<br><br>
-<br><br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Echo Echo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Echo
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Echo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Echo
+<br>
+<br>
+<br>
+<br>
 <br><br>
 <br><br>
 <br><br>
