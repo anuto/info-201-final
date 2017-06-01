@@ -6,9 +6,10 @@ library(stringi)
 library(shinyLP)
 library(gdata)
 library(knitr)
+library(shiny.router)
 
 shinyServer(function(input, output) {
-  
+
   output$assaultMap <- renderPlotly({
     source('./scripts/map.R')
 
@@ -107,12 +108,13 @@ shinyServer(function(input, output) {
   
   output$timeline <- renderPlotly ({
     source('./scripts/timeline.R')
-    Timeline(input$oc)
+    df <- read.csv('./data/title.ix.cases.csv')
+    
+    
+    Timeline(input$oc, df)
   })
   
-  output$aboutus <- renderUI({
-    HTML(markdown::markdownToHTML(knit('aboutus.html', quiet = TRUE)))
-  })
+  output$au <- renderUI(includeHTML('aboutus.html'))
   
-  output$au <- renderUI(includeHTML('./www/aboutus.html'), )
+  output$report <- renderUI(includeHTML('index.html'))
 })

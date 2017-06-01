@@ -88,6 +88,8 @@ open.cases <- title.ix.data %>% filter(is.closed == "FALSE")
 num.open.cases <- nrow(open.cases)
 ```
 
+
+
 1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated 2% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting.
 2. The average days it take for colleges tend to close reported cases is `r average.duration` days.  
 3. There are `r num.open.cases` mishandled cases from 2010 to 2016. 

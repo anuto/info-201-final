@@ -4,6 +4,7 @@ library(dplyr)
 library(gdata)
 library(zipcode)
 library(stringi)
+
 getwd()
 # get rid of weird formats
 clean <- function(data, sortby) {
@@ -150,3 +151,6 @@ x <- read.csv("Total.sexual.assaults.05.15.csv", stringsAsFactors = FALSE)
 View(x)
 
 install.packages("shinyLP")
+install.packages("devtools")
+library(devtools)
+devtools::install_github("Appsilon/shiny.router")
