@@ -41,32 +41,36 @@ shinyUI(fluidPage(
                                          content = 'See the distribution of reported sexual assaults across 
                                          college campuses in the US over the last decade. Compare and contrast
                                          colleges by population, sector, and gender ratio.',
-                                         button_link = '900', button_label = 'Explore map')
+                                         button_link = NULL, button_label = 'Explore map')
                ),
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'timeline2.PNG', label = 'Explore mishandled cases',
                                                                       content = 'In 2015 Department of Education investigated sexual assault
                                                                       cases involving student athletes. They found 400 cases to have been mishandled.
                                                                       This graph encodes the timelines of open and closed cases.',
-                                                                      button_link = 'http://getbootstrap.com/', button_label = 'Explore cases')
+                                                                      button_link = NULL, button_label = 'Explore cases')
                ),
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'Capture3.PNG', label = 'Explore our solution',
                                          content = 'Whether you\'re a student or university employee, here are
-                                         some ways you can do your part to help protect students',
-                                         button_link = 'http://getbootstrap.com/', button_label = 'Get involved')
+                                         some ways you can do your part to help victims and prevent future attacks.',
+                                         button_link = NULL, button_label = 'Get involved')
                )),
 
                fluidRow(
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'data.PNG', label = 'Understanding our Data',
-                                                                      content = 'Learn more about where our data came from',
-                                                                      button_link = 'http://getbootstrap.com/', button_label = 'See more')
+                                                                      content = 'Learn more about where our data came from,
+                                                                      and why it was collected. Also, explore our raw data
+                                                                      for yourself if you want.',
+                                                                      button_link = NULL, button_label = 'See more')
                ),
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'report.PNG', label = 'Explore our findings',
                                                                       content = 'Whether you\'re a student or university employee, here are
                                                                       some ways you can do your part to help protect students',
-                                                                      button_link = 'http://getbootstrap.com/', button_label = 'Get involved')
+                                                                      button_link = NULL, button_label = 'Get involved')
                ),
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'people.png', label = 'Meet the Team',
-                                         content = 'We\'re just INFO 201 students, nothing too exciting!', button_label = "", button_link = NULL)
+                                         content = 'The INFO201 dream team: read on to see made up facts about (codenames)
+                                         Alpha, Beta, Charlie, and (not a code name) Echo.', 
+                                         button_label = "Meet the team", button_link = NULL)
                )
              )
              ),

@@ -33,7 +33,9 @@ open.case.timeline <- plot_ly(x = ~open.case, y = 0) %>%
 
 # Draw the timeline plot for closed cases
 close.case.timeline <- plot_ly(x = ~closed.case.open.date, y = 0,
-                               text = paste(duration, "days"), color = 'orange') %>% 
+                               text = paste(duration, "days"), color = 'orange',
+                               hoverinfo = 'text',
+                               text = 'abc') %>% 
   layout(yaxis = ax, xaxis = list(title = 'Closed Cases Timeline'))
 
 # Draw the duration plot for the closed cases
