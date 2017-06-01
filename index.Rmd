@@ -1,12 +1,13 @@
 ---
-title: "Report"
+title: "Data Report"
 output: html_document
 ---
 
-```{r, echo = FALSE, message = FALSE}
+```{r, echo = FALSE, message = FALSE, warning=FALSE}
 library(dplyr)
 library(knitr)
 library(ggplot2)
+library(jsonlite)
 
 
 df <- read.csv("./data/report.data.csv", stringsAsFactors = FALSE)
@@ -22,19 +23,7 @@ df$rape.rate13 <- as.numeric(df$rape.rate13)
 df$rape.rate14 <- as.numeric(df$rape.rate14)
 df$rape.rate15 <- as.numeric(df$rape.rate15)
 
-medians <- c(median(df$rape.rate7),
-           median(df$rape.rate8),
-           median(df$rape.rate9), 
-           median(df$rape.rate10),
-           median(df$rape.rate11), 
-           median(df$rape.rate12), 
-           median(df$rape.rate13), 
-           median(df$rape.rate14), 
-           median(df$rape.rate15))
-
-means <- c(mean(df$rape.rate5), 
-           mean(df$rape.rate6), 
-           mean(df$rape.rate7),
+means <- c(mean(df$rape.rate7),
            mean(df$rape.rate8),
            mean(df$rape.rate9), 
            mean(df$rape.rate10),
@@ -45,12 +34,12 @@ means <- c(mean(df$rape.rate5),
            mean(df$rape.rate15))
 
 years <- c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015')
-medians.data <- as.data.frame(cbind(medians, years))
+medians.data <- as.data.frame(cbind(means, years))
 
 # adding mean graph
 ggplot(data = medians.data, aes(
   x = years,
-  y = medians,
+  y = means,
   group = 1
 )) + geom_line()
 
@@ -66,13 +55,23 @@ maxes <- c(max(df$rape.rate7),
            max(df$rape.rate15)
 )
 
-max.data <- as.data.frame(cbind(maxes, years))
+campuses <- c(df %>% filter(rape.rate7 == max(df$rape.rate7)) %>%  select(INSTNM),
+           df %>% filter(rape.rate8 == max(df$rape.rate8)) %>% select(INSTNM),
+           df %>% filter(rape.rate9 == max(df$rape.rate9)) %>% select(INSTNM), 
+           df %>% filter(rape.rate10 == max(df$rape.rate10)) %>% select(INSTNM),
+           df %>% filter(rape.rate11 == max(df$rape.rate11)) %>% select(INSTNM), 
+           df %>% filter(rape.rate12 == max(df$rape.rate12)) %>% select(INSTNM), 
+           df %>% filter(rape.rate13 == max(df$rape.rate13)) %>% select(INSTNM), 
+           df %>% filter(rape.rate14 == max(df$rape.rate14)) %>% select(INSTNM), 
+           df %>% filter(rape.rate15 == max(df$rape.rate15)) %>% select(INSTNM)
+  
+)
+
+max.data <- as.data.frame(cbind(campuses, maxes, years))
 
 # adding table of maxes
-kable(max.data, format = "markdown")
+kable(max.data, format = "markdown", row.names = FALSE)
 
-
-df <- cbind(means, c('2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015'))
 # Read the title.ix data.
 title.ix.data <- read.csv('./data/title.ix.cases.csv', stringsAsFactors = FALSE)
 # Read closed case data
@@ -89,7 +88,7 @@ open.cases <- title.ix.data %>% filter(is.closed == "FALSE")
 num.open.cases <- nrow(open.cases)
 ```
 
-1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated x% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting.
+1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated 2% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting.
 2. The average days it take for colleges tend to close reported cases is `r average.duration` days.  
 3. There are `r num.open.cases` mishandled cases from 2010 to 2016. 
 
