@@ -18,7 +18,7 @@ duration <- closed.case.close.date - closed.case.open.date
 
 
 # Create a variable that hides for the axis.
-ax <- list(
+hide.axis <- list(
   title = "",
   zeroline = FALSE,
   showline = FALSE,
@@ -28,9 +28,16 @@ ax <- list(
 
 
 # Draw the timeline plot for open cases
-p <- plot_ly(x = ~open.case, y = 0) %>% layout(yaxis = ax)
+open.case.timeline <- plot_ly(x = ~open.case, y = 0) %>%
+  layout(yaxis = ax, xaxis = list(title = 'Still Open Cases Timeline'))
 
 # Draw the timeline plot for closed cases
-g <- plot_ly(x = ~closed.case.open.date, y = 0, text = paste(duration, "days"), color = 'orange') %>% 
-  layout(yaxis = ax)
-g
+close.case.timeline <- plot_ly(x = ~closed.case.open.date, y = 0,
+                               text = paste(duration, "days"), color = 'orange') %>% 
+  layout(yaxis = ax, xaxis = list(title = 'Closed Cases Timeline'))
+
+# Draw the duration plot for the closed cases
+duration.graph <- plot_ly(x = ~closed.case.open.date, y = ~duration, type = "scatter", mode = 'lines',
+                          text = paste(duration, "days")) %>% 
+  layout(title = "Closed Case Duration Graph", xaxis = list(title = 'Closed Cases Date'),
+         yaxis = list(title = 'Days to close case'))
