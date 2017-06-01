@@ -29,11 +29,11 @@ AssaultMap <- function(assault.data) {
                          sep = "<br />")
            ) %>%
     add_markers(
-      color = ~rape,
+      color = ~pop.percent,
       opacity = 0.5,
       colors = c("#000000", "#ff0000"),
       symbol = I("circle"),
-      size = ~pop.percent,
+      size = ~pop,
       hoverinfo = "text"
     ) %>%
     colorbar(title = "Number of Reported Rape Cases") %>%
