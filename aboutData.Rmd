@@ -7,7 +7,7 @@ output: html_document
 This information was collected under the Title IX amendment by the Department of Education. We use this API to retrieve information about reported but mishandled cases. Specifically, the data set contains information about whether the case closed, the location of the case, the cases’ open date and the information about the university. 
 
 
-## Campus Safety and Security
+## Campus Safety and Security Data
 This data includes all data submitted through the Campus Safety and Security Survey during 2005 to 2015. It is collected by the U.S Department of Education and aims to assist schools to provide students a safe environment to study and to keep students, parents and employees well informed about campus security. This data set contains basic information (population, address, zip code, city, etc.) about universities and the number of rape cases in each year (2005 - 2015).
 
 
