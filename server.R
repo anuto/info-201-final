@@ -6,7 +6,6 @@ library(stringi)
 library(shinyLP)
 library(gdata)
 library(knitr)
-library(shiny.router)
 library(shinydashboard)
 
 shinyServer(function(input, output, session) {
@@ -120,7 +119,6 @@ shinyServer(function(input, output, session) {
   output$report <- renderUI(includeHTML('index.html'))
   
     observeEvent(input$do, {
-      updateNavbarPage(session, "timeline", selected = NULL)
-    }
-)
+      updateNavbarPage(session, "report")
+    })
 })

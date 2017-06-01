@@ -66,8 +66,7 @@ shinyUI(fluidPage(
                                                                       button_link = 'http://getbootstrap.com/', button_label = 'Get involved')
                ),
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'people.png', label = 'Meet the Team',
-                                         content = 'We\'re just INFO 201 students, nothing too exciting!',
-                                         actionLink("do", 'See more'), 'See More')
+                                         content = 'We\'re just INFO 201 students, nothing too exciting!', button_label = "", button_link = NULL)
                )
              )
              ),
@@ -91,7 +90,7 @@ shinyUI(fluidPage(
                         textInput("txt", "Search by school:", "text here"),
                         selectizeInput("state", "Search by state: ", "text here"),
                         selectInput("oc", "Open or closed cases?", choices = list("Open", "Closed")),
-                        actionButton("action", "Button"),
+                        actionButton('do', 'hmmmm'),
                         actionButton("action2", "Button2", class = "btn-primary")
                         
                       ),
@@ -99,6 +98,7 @@ shinyUI(fluidPage(
                       mainPanel(plotlyOutput("timeline"))
              ),
              tabPanel("Summary of Findings",
+                      id = 'report',
                       htmlOutput('report')
              ),     
              tabPanel("About the Data",
