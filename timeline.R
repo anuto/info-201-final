@@ -43,3 +43,4 @@ duration.graph <- plot_ly(x = ~closed.case.open.date, y = ~duration, type = "sca
                           text = paste(duration, "days")) %>% 
   layout(title = "Closed Case Duration Graph", xaxis = list(title = 'Closed Cases Date'),
          yaxis = list(title = 'Days to close case'))
+

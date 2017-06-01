@@ -73,7 +73,7 @@ max.data <- as.data.frame(cbind(campuses, maxes, years))
 
 
 # adding table of maxes
-kable(max.data, format = "markdown", row.names = FALSE)
+kable(max.data, row.names = FALSE)
 
 # Read the title.ix data.
 title.ix.data <- read.csv('./data/title.ix.cases.csv', stringsAsFactors = FALSE)
