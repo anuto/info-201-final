@@ -8,6 +8,7 @@ library(dplyr)
 library(knitr)
 library(ggplot2)
 
+
 df <- read.csv("./data/report.data.csv", stringsAsFactors = FALSE)
 df <- df[complete.cases(df[,33:41]),]
 
@@ -30,6 +31,19 @@ medians <- c(median(df$rape.rate7),
            median(df$rape.rate13), 
            median(df$rape.rate14), 
            median(df$rape.rate15))
+
+means <- c(mean(df$rape.rate5), 
+           mean(df$rape.rate6), 
+           mean(df$rape.rate7),
+           mean(df$rape.rate8),
+           mean(df$rape.rate9), 
+           mean(df$rape.rate10),
+           mean(df$rape.rate11), 
+           mean(df$rape.rate12), 
+           mean(df$rape.rate13), 
+           mean(df$rape.rate14), 
+           mean(df$rape.rate15))
+
 years <- c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015')
 medians.data <- as.data.frame(cbind(medians, years))
 
@@ -57,9 +71,25 @@ max.data <- as.data.frame(cbind(maxes, years))
 # adding table of maxes
 kable(max.data, format = "markdown")
 
+
+df <- cbind(means, c('2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015'))
+# Read the title.ix data.
+title.ix.data <- read.csv('./data/title.ix.cases.csv', stringsAsFactors = FALSE)
+# Read closed case data
+close <- title.ix.data %>% filter(is.closed == "TRUE") %>% select(case_id, opened, closed)
+# Set the open date int othe form that is usable
+closed.case.open.date <- as.Date(close$opened, format = "%m/%d/%y")
+# Set the close date int othe form that is usable
+closed.case.close.date <- as.Date(close$closed, format = "%m/%d/%y")
+# Calculate the days that take for each closed case.
+duration <- closed.case.close.date - closed.case.open.date
+average.duration <- round(sum (duration) / nrow(as.data.frame(duration)), digits = 1)
+# Calculate mishandled/open cases.
+open.cases <- title.ix.data %>% filter(is.closed == "FALSE")
+num.open.cases <- nrow(open.cases)
 ```
 
+1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated x% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting.
+2. The average days it take for colleges tend to close reported cases is `r average.duration` days.  
+3. There are `r num.open.cases` mishandled cases from 2010 to 2016. 
 
-1. The rate of reported campus rape has been slowly increasing. However, because only an estimated 2% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting.
-2. 
-3. 
