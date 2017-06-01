@@ -5,6 +5,37 @@ output: html_document
 
 ```{r, echo = FALSE, message = FALSE}
 library(dplyr)
+library(knitr)
 
+df <- read.csv("./data/report.data.csv", stringsAsFactors = FALSE)
+#write.csv(df, "./data/report.data.csv", row.names = FALSE)
+df <- df[complete.cases(df[,31:37]),]
+df <- df %>%
+  mutate(rape.rate14 = RAPE14 / TOTAL14)
+
+df$rape.rate5 <- as.numeric(df$rape.rate5)
+df$rape.rate6 <- as.numeric(df$rape.rate6)
+df$rape.rate7 <- as.numeric(df$rape.rate7)
+df$rape.rate8 <- as.numeric(df$rape.rate8)
+df$rape.rate9 <- as.numeric(df$rape.rate9)
+df$rape.rate10 <- as.numeric(df$rape.rate10)
+df$rape.rate11 <- as.numeric(df$rape.rate11)
+df$rape.rate12 <- as.numeric(df$rape.rate12)
+df$rape.rate13 <- as.numeric(df$rape.rate13)
+df$rape.rate14 <- as.numeric(df$rape.rate14)
+df$rape.rate15 <- as.numeric(df$rape.rate15)
+means <- c(mean(df$rape.rate5), 
+           mean(df$rape.rate6), 
+           mean(df$rape.rate7),
+           mean(df$rape.rate8),
+           mean(df$rape.rate9), 
+           mean(df$rape.rate10),
+           mean(df$rape.rate11), 
+           mean(df$rape.rate12), 
+           mean(df$rape.rate13), 
+           mean(df$rape.rate14), 
+           mean(df$rape.rate15))
+df <- cbind(means, c('2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015'))
 
 ```
+1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated x% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting.

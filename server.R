@@ -3,6 +3,8 @@ library(plotly)
 library(plyr)
 library(dplyr)
 library(stringi)
+library(shinyLP)
+library(gdata)
 
 shinyServer(function(input, output) {
   
