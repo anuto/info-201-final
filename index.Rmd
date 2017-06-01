@@ -41,7 +41,9 @@ ggplot(data = medians.data, aes(
   x = years,
   y = means,
   group = 1
-)) + geom_line()
+)) + 
+  geom_line() + 
+  ggtitle("Mean # of Reported Rape Cases per Year")
 
 # getting the campuses with the most assault
 maxes <- c(max(df$rape.rate7),
@@ -64,10 +66,10 @@ campuses <- c(df %>% filter(rape.rate7 == max(df$rape.rate7)) %>%  select(INSTNM
            df %>% filter(rape.rate13 == max(df$rape.rate13)) %>% select(INSTNM), 
            df %>% filter(rape.rate14 == max(df$rape.rate14)) %>% select(INSTNM), 
            df %>% filter(rape.rate15 == max(df$rape.rate15)) %>% select(INSTNM)
-  
 )
 
 max.data <- as.data.frame(cbind(campuses, maxes, years))
+
 
 # adding table of maxes
 kable(max.data, format = "markdown", row.names = FALSE)
@@ -89,8 +91,9 @@ num.open.cases <- nrow(open.cases)
 ```
 
 
-
-1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated 2% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting.
-2. The average days it take for colleges tend to close reported cases is `r average.duration` days.  
-3. There are `r num.open.cases` mishandled cases from 2010 to 2016. 
+1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated 2% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting. This could easily be due to different survey techniques across years.
+2. Several campuses (Mayo Medical School, Shimer College) appear on the list of worst offenders multiple times.
+3. The average days it take for colleges tend to close reported cases is `r average.duration` days.  
+4. There are `r num.open.cases` mishandled cases from 2010 to 2016. 
+5. The time it takes to close a case is steadily decreasing with time.
 
