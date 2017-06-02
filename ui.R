@@ -126,7 +126,7 @@ shinyUI(fluidPage(
              tabPanel("Moving Forwards",
                       includeMarkdown("solution.Rmd")
              ),
-             tabsetPanel("About us",
+             tabPanel("About us",
                       id = 'bread',
                       htmlOutput('au')
                       

@@ -7,6 +7,9 @@
 AssaultMap <- function(assault.data) {
   pop.percent <- (assault.data$rape / assault.data$pop) * 1000
   
+  
+  assault.data <- assault.data$
+  
   g <- list(
     scope = 'usa',
     projection = list(type = 'albers usa'),
