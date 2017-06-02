@@ -7,7 +7,6 @@ library(shinyLP)
 library(gdata)
 library(knitr)
 library(shiny.router)
-library(shinydashboard)
 
 shinyServer(function(input, output, session) {
 
@@ -39,10 +38,6 @@ shinyServer(function(input, output, session) {
     zero.filter <- -1
     if (!input$include) {
       zero.filter <- 0
-    }
-    
-    if (input$maptxt != "") {
-      assault.map.data <- assault.map.data %>% filter(INSTNM == input$maptxt)
     }
 
     # select only the data specified in maps of the year/population size/rank specified here

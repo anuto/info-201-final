@@ -41,7 +41,7 @@ shinyUI(fluidPage(
                                          content = 'See the distribution of reported sexual assaults across 
                                          college campuses in the US over the last decade. Compare and contrast
                                          colleges by population, sector, and gender ratio.',
-                                         button_link = NULL, button_label = 'Explore map')
+                                         button_link = '#tab-3276-2', button_label = 'Explore map')
                ),
                column(4,  div(style = "height:0px;"), thumbnail_label(image = 'timeline2.PNG', label = 'Explore mishandled cases',
                                                                       content = 'In 2015 Department of Education investigated sexual assault
@@ -79,7 +79,6 @@ shinyUI(fluidPage(
                       
                       # year, population, public/private
                       sidebarPanel(
-                        textInput("maptxt", "Search by school:"),
                         checkboxInput("include", "Include 0 counts?", value = TRUE),
                         checkboxInput("public.school", "Public", value = TRUE),
                         checkboxInput("private.school", "Private", value = TRUE),
