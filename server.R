@@ -1,13 +1,13 @@
-library(shiny)
-library(plotly)
-library(plyr)
-library(dplyr)
-library(stringi)
-library(shinyLP)
-library(gdata)
-library(knitr)
-library(shinydashboard)
-library(shiny.router)
+require(shiny)
+require(plotly)
+require(plyr)
+require(dplyr)
+require(stringi)
+require(shinyLP)
+require(knitr)
+require(gdata)
+require(shinydashboard)
+require(shiny.router)
 
 shinyServer(function(input, output, session) {
 

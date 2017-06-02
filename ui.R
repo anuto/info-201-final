@@ -1,9 +1,9 @@
-library(shiny)
-library(shinythemes)
-library(plotly)
-library(shinyLP)
-library(markdown)
-library(rmarkdown)
+require(shiny)
+require(shinythemes)
+require(plotly)
+require(shinyLP)
+require(markdown)
+require(rmarkdown)
 
 thumbnail_label <- function(image, label, content, button_link, button_label ){
   HTML(paste0("<div class='row'>
@@ -45,7 +45,7 @@ shinyUI(fluidPage(
   jumbotron("U.S College Campus Sexual Assaults","", button = FALSE),
   
   navbarPage("",
-             tabsetPanel(tabPanel("Home",
+             tabPanel("Home",
                        panel_div(class_type = "primary", panel_title = 'About this project',
                                  content = "The purpose of this report is to inform perspective and current college students, 
                                             as well as their parents, about campus safety in terms of sexual assault. After
@@ -91,8 +91,8 @@ shinyUI(fluidPage(
                                          button_label = "Meet the team", button_link = NULL)
                )
              )
-             )),
-             tabsetPanel("Sexual Assaults by Location",
+             ),
+             tabPanel("Sexual Assaults by Location",
                       headerPanel("Sexual Assaults by Location"),
                       
                       # year, population, public/private
@@ -107,7 +107,7 @@ shinyUI(fluidPage(
                       
                       mainPanel(plotlyOutput("assaultMap"))
              ),
-             tabsetPanel("Mishandled Sexual Assaults",
+             tabPanel("Mishandled Sexual Assaults",
                       id = 'timeline',
                       headerPanel("As flagged by Title IX"),
                       sidebarPanel(
@@ -115,14 +115,14 @@ shinyUI(fluidPage(
                         selectInput("oc", "Open or closed cases?", choices = list("Open", "Closed"))),
                       mainPanel(plotlyOutput("timeline"))
              ),
-             tabsetPanel("Summary of Findings",
+             tabPanel("Summary of Findings",
                       id = 'report',
                       htmlOutput('report')
              ),     
-             tabsetPanel("About the Data",
+             tabPanel("About the Data",
                       includeMarkdown("aboutData.Rmd")
              ),
-             tabsetPanel("Moving Forwards",
+             tabPanel("Moving Forwards",
                       includeMarkdown("solution.Rmd")
              ),
              tabsetPanel("About us",
