@@ -13,12 +13,9 @@ shinyServer(function(input, output, session) {
     source('./scripts/map.R')
 
     assault.map.data <- read.csv("./data/full.map.data.csv", stringsAsFactors = FALSE)
-    
+    school <- ""
     year <- input$map.year.slider
     if (year > 2009) {year <- year %% 100} else {year <- year %% 10}
-    
-    school <- ""
-    school <- input$maptxt
     
     public.school <- input$public.school
     private.school <- input$private.school
