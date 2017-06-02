@@ -4,7 +4,6 @@
 #         percent of cases to population (rape / pop * 1000), 
 #         longitude (longitude),
 #         latitude (latitude)
-#         :D
 AssaultMap <- function(assault.data) {
   pop.percent <- (assault.data$rape / assault.data$pop) * 1000
   
