@@ -5,8 +5,25 @@ library(shinyLP)
 library(markdown)
 library(rmarkdown)
 
+thumbnail_label <- function(image, label, content, button_link, button_label ){
+  HTML(paste0("<div class='row'>
+              <div class='col-sm-14 col-md-12'>
+              <div class='thumbnail'>
+              <img src='", image ,"' alt='...'>
+              <div class='caption'>
+              <h3>", label, "</h3>
+              <p>", content, "</p>
+              </div>
+              </div>
+              </div>
+              </div>") )
+  
+  
+}
+
 shinyUI(fluidPage(
   theme = 'bootstrap.css',
+ 
   tags$head(
     tags$link(rel = "stylesheet", type = "text/css", href = "bootstrap.css"),
     HTML('<link rel="icon", href="map.png",
@@ -28,7 +45,7 @@ shinyUI(fluidPage(
   jumbotron("U.S College Campus Sexual Assaults","", button = FALSE),
   
   navbarPage("",
-             tabPanel("Home",
+             tabsetPanel(tabPanel("Home",
                        panel_div(class_type = "primary", panel_title = 'About this project',
                                  content = "The purpose of this report is to inform perspective and current college students, 
                                             as well as their parents, about campus safety in terms of sexual assault. After
@@ -36,7 +53,8 @@ shinyUI(fluidPage(
                                             college decision. Additionally, we hope to raise current student awareness regarding their college’s safety,
                                             and to help them hold the colleges/universities accountable for protecting student safety."),
                                    
-             fluidRow(
+            headerPanel("Features:"), 
+            fluidRow(
                column(width = 4, div(style = "height:0px;"), thumbnail_label(image = 'map.png', label = 'Explore by location',
                                          content = 'See the distribution of reported sexual assaults across 
                                          college campuses in the US over the last decade. Compare and contrast
@@ -73,8 +91,8 @@ shinyUI(fluidPage(
                                          button_label = "Meet the team", button_link = NULL)
                )
              )
-             ),
-             tabPanel("Sexual Assaults by Location",
+             )),
+             tabsetPanel("Sexual Assaults by Location",
                       headerPanel("Sexual Assaults by Location"),
                       
                       # year, population, public/private
@@ -83,12 +101,13 @@ shinyUI(fluidPage(
                         checkboxInput("public.school", "Public", value = TRUE),
                         checkboxInput("private.school", "Private", value = TRUE),
                         sliderInput("map.year.slider", "Year:", 2005, 2015, 1, sep = ""),
-                        sliderInput("map.population", "Campus Population:", 0, 80000, 1000, value = c(0, 5000), dragRange = TRUE)
+                        sliderInput("map.population", "Campus Population:", 0, 80000, 1000, value = c(0, 5000), dragRange = TRUE),
+                        actionButton('dog', 'Pet dog')
                       ),
                       
                       mainPanel(plotlyOutput("assaultMap"))
              ),
-             tabPanel("Mishandled Sexual Assaults",
+             tabsetPanel("Mishandled Sexual Assaults",
                       id = 'timeline',
                       headerPanel("As flagged by Title IX"),
                       sidebarPanel(
@@ -96,17 +115,18 @@ shinyUI(fluidPage(
                         selectInput("oc", "Open or closed cases?", choices = list("Open", "Closed"))),
                       mainPanel(plotlyOutput("timeline"))
              ),
-             tabPanel("Summary of Findings",
+             tabsetPanel("Summary of Findings",
                       id = 'report',
                       htmlOutput('report')
              ),     
-             tabPanel("About the Data",
+             tabsetPanel("About the Data",
                       includeMarkdown("aboutData.Rmd")
              ),
-             tabPanel("Moving Forwards",
+             tabsetPanel("Moving Forwards",
                       includeMarkdown("solution.Rmd")
              ),
-             tabPanel("About us",
+             tabsetPanel("About us",
+                      id = 'bread',
                       htmlOutput('au')
                       
             )

@@ -213,6 +213,11 @@ shinyServer(function(input, output, session) {
     Timeline(input$oc, df)
   })
   
+  observeEvent(input$dog, {
+               updateNavbarPage(session, 'bread')
+         
+  })
+  
   output$au <- renderUI(includeHTML('aboutus.html'))
   
   output$report <- renderUI(includeHTML('index.html'))
