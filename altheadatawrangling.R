@@ -191,4 +191,11 @@ install.packages('plyr')
 install.packages('shinyLP')
 install.packages('shinythemes')
 install.packages('markdown')
+install.packages('pandoc')
 install.packages('rmarkdown')
+
+# installing/loading the package:
+if(!require(installr)) { install.packages("installr"); require(installr)} #load / install+load installr
+
+# Installing pandoc
+install.pandoc()

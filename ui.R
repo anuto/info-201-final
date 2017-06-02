@@ -101,8 +101,7 @@ shinyUI(fluidPage(
                         checkboxInput("public.school", "Public", value = TRUE),
                         checkboxInput("private.school", "Private", value = TRUE),
                         sliderInput("map.year.slider", "Year:", 2005, 2015, 1, sep = ""),
-                        sliderInput("map.population", "Campus Population:", 0, 80000, 1000, value = c(0, 5000), dragRange = TRUE),
-                        actionButton('dog', 'Pet dog')
+                        sliderInput("map.population", "Campus Population:", 0, 80000, 1000, value = c(0, 5000), dragRange = TRUE)
                       ),
                       
                       mainPanel(plotlyOutput("assaultMap"))
