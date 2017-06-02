@@ -152,8 +152,3 @@ x <- read.csv("Total.sexual.assaults.05.15.csv", stringsAsFactors = FALSE)
 View(x)
 
 
-# installing/loading the package:
-if(!require(installr)) { install.packages("installr"); require(installr)} #load / install+load installr
-
-# Installing pandoc
-install.pandoc()
