@@ -1,12 +1,3 @@
-library(shiny)
-library(plotly)
-library(plyr)
-library(dplyr)
-library(stringi)
-library(shinyLP)
-library(gdata)
-library(knitr)
-
 require(shiny)
 require(plotly)
 require(plyr)
@@ -15,8 +6,6 @@ require(stringi)
 require(shinyLP)
 require(knitr)
 require(gdata)
-require(shinydashboard)
-require(shiny.router)
 
 shinyServer(function(input, output, session) {
 
@@ -24,12 +13,9 @@ shinyServer(function(input, output, session) {
     source('./scripts/map.R')
 
     assault.map.data <- read.csv("./data/full.map.data.csv", stringsAsFactors = FALSE)
-    
+    school <- ""
     year <- input$map.year.slider
     if (year > 2009) {year <- year %% 100} else {year <- year %% 10}
-    
-    school <- ""
-    school <- input$maptxt
     
     public.school <- input$public.school
     private.school <- input$private.school
@@ -223,10 +209,8 @@ shinyServer(function(input, output, session) {
     Timeline(input$oc, df)
   })
   
-  observeEvent(input$dog, {
-               updateNavbarPage(session, 'bread')
-         
-  })
+
+  
   
   output$au <- renderUI(includeHTML('aboutus.html'))
   

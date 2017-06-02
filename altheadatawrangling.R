@@ -171,3 +171,31 @@ require(gdata)
 require(shinydashboard)
 require(shiny.router)
 
+require(shiny)
+require(plotly)
+require(plyr)
+require(dplyr)
+require(stringi)
+require(shinyLP)
+require(knitr)
+require(gdata)
+
+install.packages('shiny')
+install.packages('plotly')
+install.packages('stringi')
+install.packages('plotly')
+install.packages('gdata')
+install.packages('knitr')
+install.packages('shinyLP')
+install.packages('plyr')
+install.packages('shinyLP')
+install.packages('shinythemes')
+install.packages('markdown')
+install.packages('pandoc')
+install.packages('rmarkdown')
+
+# installing/loading the package:
+if(!require(installr)) { install.packages("installr"); require(installr)} #load / install+load installr
+
+# Installing pandoc
+install.pandoc()
