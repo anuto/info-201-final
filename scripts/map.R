@@ -1,11 +1,10 @@
-# map :D
-
-# I want: number of cases (rape), 
+# wants: number of cases (rape), 
 #         percent of cases to population (rape / pop * 1000), 
 #         longitude (longitude),
 #         latitude (latitude)
 AssaultMap <- function(assault.data) {
   pop.percent <- (assault.data$rape / assault.data$pop) * 1000
+  
   g <- list(
     scope = 'usa',
     projection = list(type = 'albers usa'),
@@ -34,7 +33,7 @@ AssaultMap <- function(assault.data) {
       size = ~pop,
       hoverinfo = "text"
     ) %>%
-    colorbar(title = "Number of Reported Rape Cases per 1000 Students") %>%
+    colorbar(title = "Reported Rape Cases Per Thousand Students") %>%
     layout(
       title = 'Cases of Sexual Assault per Year by Campus', geo = g
     )

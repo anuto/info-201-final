@@ -13,6 +13,8 @@ shinyServer(function(input, output, session) {
     source('./scripts/map.R')
 
     assault.map.data <- read.csv("./data/full.map.data.csv", stringsAsFactors = FALSE)
+    
+    # parsing input into usable form
     school <- ""
     year <- input$map.year.slider
     if (year > 2009) {year <- year %% 100} else {year <- year %% 10}
@@ -40,6 +42,7 @@ shinyServer(function(input, output, session) {
     }
 
     # select only the data specified in maps of the year/population size/rank specified here
+    # one case for each year, school specified and not specified
     if (year == 5 && school == "") {
       AssaultMap(assault.map.data %>%
                    mutate(pop = TOTAL5, rape = RAPE5) %>% 
