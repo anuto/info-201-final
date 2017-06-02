@@ -97,6 +97,7 @@ shinyUI(fluidPage(
                       
                       # year, population, public/private
                       sidebarPanel(
+                        textInput("maptxt", "Search by school:"),
                         checkboxInput("include", "Include 0 counts?", value = TRUE),
                         checkboxInput("public.school", "Public", value = TRUE),
                         checkboxInput("private.school", "Private", value = TRUE),

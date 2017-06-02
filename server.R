@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 library(shiny)
 library(plotly)
 library(plyr)
