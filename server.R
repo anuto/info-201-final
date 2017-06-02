@@ -6,8 +6,7 @@ library(stringi)
 library(shinyLP)
 library(gdata)
 library(knitr)
-library(shinydashboard)
-library(shiny.router)
+
 
 shinyServer(function(input, output, session) {
 
@@ -19,6 +18,7 @@ shinyServer(function(input, output, session) {
     year <- input$map.year.slider
     if (year > 2009) {year <- year %% 100} else {year <- year %% 10}
     
+    school <- ""
     school <- input$maptxt
     
     public.school <- input$public.school
