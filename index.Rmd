@@ -8,6 +8,7 @@ library(dplyr)
 library(knitr)
 library(ggplot2)
 library(jsonlite)
+library(kableExtra)
 
 
 df <- read.csv("./data/report.data.csv", stringsAsFactors = FALSE)
@@ -32,7 +33,7 @@ means <- c(mean(df$rape.rate7),
            mean(df$rape.rate13), 
            mean(df$rape.rate14), 
            mean(df$rape.rate15))
-means <- round(means, 6)
+means <- round(means, 3)
 
 years <- c('2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015')
 medians.data <- as.data.frame(cbind(means, years))
@@ -73,7 +74,9 @@ max.data <- as.data.frame(cbind(campuses, maxes, years))
 
 
 # adding table of maxes
-kable(max.data, row.names = FALSE)
+kable(max.data, row.names = FALSE) %>% 
+  kable_styling(bootstrap_options = "striped", full_width = T)
+
 
 # Read the title.ix data.
 title.ix.data <- read.csv('./data/title.ix.cases.csv', stringsAsFactors = FALSE)
@@ -91,6 +94,7 @@ open.cases <- title.ix.data %>% filter(is.closed == "FALSE")
 num.open.cases <- nrow(open.cases)
 ```
 
+The above table reports the campus with the most rapes per 1000 students over each year of data.
 
 1. Aside from a few outliers, the rate of reported campus rape has been slowly increasing. However, because only an estimated 2% of rapes are reported, it's unclear whether this increase correlates to a genuine increase in rape cases or an increase in its reporting. This could easily be due to different survey techniques across years.
 2. Several campuses (Mayo Medical School, Shimer College) appear on the list of worst offenders multiple times.
