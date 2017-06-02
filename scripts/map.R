@@ -7,6 +7,9 @@
 AssaultMap <- function(assault.data) {
   pop.percent <- (assault.data$rape / assault.data$pop) * 1000
   
+  
+  assault.data <- assault.data$
+  
   g <- list(
     scope = 'usa',
     projection = list(type = 'albers usa'),
@@ -35,9 +38,9 @@ AssaultMap <- function(assault.data) {
       size = ~pop,
       hoverinfo = "text"
     ) %>%
-    colorbar(title = "Number of Reported Rape Cases") %>%
+    colorbar(title = "Number of Reported Rape Cases per 1000 Students") %>%
     layout(
-      title = 'Cases of Sexual Assault per Year by Campus', geo = g
+      title = 'Cases of Sexual Assault per 1000 Students by Campus', geo = g
     )
 
 }

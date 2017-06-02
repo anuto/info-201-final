@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 library(shiny)
 library(plotly)
 library(plyr)
@@ -6,7 +7,17 @@ library(stringi)
 library(shinyLP)
 library(gdata)
 library(knitr)
-library(shinydashboard)
+
+require(shiny)
+require(plotly)
+require(plyr)
+require(dplyr)
+require(stringi)
+require(shinyLP)
+require(knitr)
+require(gdata)
+require(shinydashboard)
+require(shiny.router)
 
 shinyServer(function(input, output, session) {
 
@@ -18,6 +29,7 @@ shinyServer(function(input, output, session) {
     year <- input$map.year.slider
     if (year > 2009) {year <- year %% 100} else {year <- year %% 10}
     
+    school <- ""
     school <- input$maptxt
     
     public.school <- input$public.school
@@ -40,10 +52,6 @@ shinyServer(function(input, output, session) {
     zero.filter <- -1
     if (!input$include) {
       zero.filter <- 0
-    }
-    
-    if (input$maptxt != "") {
-      assault.map.data <- assault.map.data %>% filter(INSTNM == input$maptxt)
     }
 
     # select only the data specified in maps of the year/population size/rank specified here
@@ -214,6 +222,11 @@ shinyServer(function(input, output, session) {
     }
     
     Timeline(input$oc, df)
+  })
+  
+  observeEvent(input$dog, {
+               updateNavbarPage(session, 'bread')
+         
   })
   
   output$au <- renderUI(includeHTML('aboutus.html'))
