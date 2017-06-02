@@ -58,7 +58,7 @@ maxes <- c(max(df$rape.rate7),
            max(df$rape.rate14), 
            max(df$rape.rate15)
 )
-maxes <- round(maxes, 6)
+maxes <- round(maxes, 3)
 campuses <- c(df %>% filter(rape.rate7 == max(df$rape.rate7)) %>%  select(INSTNM),
            df %>% filter(rape.rate8 == max(df$rape.rate8)) %>% select(INSTNM),
            df %>% filter(rape.rate9 == max(df$rape.rate9)) %>% select(INSTNM), 
