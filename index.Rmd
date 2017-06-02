@@ -81,8 +81,8 @@ max.data <- as.data.frame(cbind(campuses, maxes, years))
 
 
 # adding table of maxes
-kable(max.data, row.names = FALSE) %>% 
-  kable_styling(bootstrap_options = "striped", full_width = T)
+kable(max.data, row.names = FALSE)
+
 
 
 # Read the title.ix data.
