@@ -38,7 +38,7 @@ output: html_document
 
 
 ##`Albert`
-### `Body man`
+### `Researcher Body man`
 <img style="float: left;" src="./pics/albert.JPG"; width = '400px'>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What is a body man, you ask?
 <br>
