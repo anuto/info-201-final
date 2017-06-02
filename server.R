@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 library(shiny)
 library(plotly)
 library(plyr)
@@ -7,6 +8,16 @@ library(shinyLP)
 library(gdata)
 library(knitr)
 
+require(shiny)
+require(plotly)
+require(plyr)
+require(dplyr)
+require(stringi)
+require(shinyLP)
+require(knitr)
+require(gdata)
+require(shinydashboard)
+require(shiny.router)
 
 shinyServer(function(input, output, session) {
 
@@ -211,6 +222,11 @@ shinyServer(function(input, output, session) {
     }
     
     Timeline(input$oc, df)
+  })
+  
+  observeEvent(input$dog, {
+               updateNavbarPage(session, 'bread')
+         
   })
   
   output$au <- renderUI(includeHTML('aboutus.html'))
